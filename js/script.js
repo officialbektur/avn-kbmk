@@ -1,7 +1,7 @@
 let button 			= document.querySelector(".form__button"),
  	popupBody 		= document.querySelector(".popup__body"),
 	content 		= document.querySelector(".content"),
-	truePass 		= "ттт",
+	truePass 		= "иии",
 	truePassword 	= truePass.toLowerCase(),
 	rozahunTextEngs = "Rozahun",
 	rozahunTextRuss = "Розахун",
