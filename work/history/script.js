@@ -1,7 +1,7 @@
 let button 			= document.querySelector(".form__button"),
  	popupBody 		= document.querySelector(".popup__body"),
 	content 		= document.querySelector(".content"),
-	truePass 		= "иии",
+	truePass 		= "ммм",
 	truePassword 	= truePass.toLowerCase(),
 	rozahunTextEngs = "Rozahun",
 	rozahunTextRuss = "Розахун",
@@ -36,7 +36,7 @@ let passwords = document.querySelector(".passwords"),
 
 	passwords.addEventListener("click", function () {
 		passwordtNumber.innerHTML ++;
-		if (passwordtNumber.innerHTML == 11) {
+		if (passwordtNumber.innerHTML == 8) {
 			passwordtNumber.innerHTML = 0;
 			passwordtText.classList.toggle("_done");
 			setTimeout(() => {
