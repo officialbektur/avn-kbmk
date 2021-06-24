@@ -73,6 +73,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .wrapper__index_block:active {
 	background-color: #185226;
