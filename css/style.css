@@ -276,6 +276,12 @@ body._mobile .menu__list > li {
 	padding: 0px 0px;
 	margin: 0px 0px;
 }
+input[type="search" i] {
+    appearance: auto;
+    box-sizing: border-box;
+    padding: 9px 7px;
+	font-size: 1.4em;
+}
 /* --------------------  Кнопка скрола на верх --Конец--   -------------------- */
 .instafram__href {
 	position: fixed;
