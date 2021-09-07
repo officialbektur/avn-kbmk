@@ -416,7 +416,12 @@ input[type="search" i] {
 	border-bottom: solid 3px #a0a0a0;
 	padding: 2em 0px;
 }
+li {
+	list-style: block;
+	color: #000000;
+}
 .page__text_numer {
+	display: block;
 	padding: 0px 0.3em;
 	font-size: 1em;
 	color: #0a0a0a;
