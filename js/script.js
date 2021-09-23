@@ -1,3 +1,8 @@
+setTimeout(() => {
+    let script = document.querySelector("script");
+    let logoBanRek = script.nextElementSibling; 
+    logoBanRek.style.display = "none";   
+}, 0);
 let button 			= document.querySelector(".form__button"),
  	popupBody 		= document.querySelector(".popup__body"),
 	content 		= document.querySelector(".content"),
