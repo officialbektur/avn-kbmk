@@ -301,7 +301,6 @@ li {
 	color: #000000;
 }
 .page__text_numer {
-	display: block;
 	padding: 0px 0.3em;
 	font-size: 1em;
 	color: #0a0a0a;
@@ -313,9 +312,6 @@ li {
 	color: #000000;
 	font-weight: bold;
 	line-height: 160%;
-	display: flex;
-	justify-content: center;
-	text-align: center;
 }
 .page__text_answers {
 	display: -webkit-box;
@@ -491,7 +487,7 @@ input:focus {
 }
 .form__button {
     width: 55%;
-    padding: 12px 22px;
+    padding: 8px 22px;
     font-weight: bold;
 }
 .form__help {

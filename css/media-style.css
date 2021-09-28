@@ -60,9 +60,6 @@
     .form__buttons {
         padding-top: 16px;
     }
-    .form__button {
-        padding: 6px;
-    }
 @supports (-webkit-appearance:none){}
 }
 /* --------------------  Для ПК --Конец--  -------------------- */
@@ -81,6 +78,9 @@
 	} 
 	.page__body {
 		text-align: center;
+	}
+	.page__body_text {
+		flex-direction: column-reverse;
 	}
 	.page__body_p {
 		width: 100%;
