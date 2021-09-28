@@ -13,14 +13,13 @@
 	<!-- CSS -->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media-style.css">
-	<script type="text/javascript" src="js/yandexmetrika.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<div class="popup__body">
             <form class="form">
                 <div class="form__img">
-                    <img src="../img/user.png" alt="" class="img__user">
+                    <img src="img/user.png" alt="" class="img__user">
                 </div>
                 <center>
                     <input id="form__input" class="form__input" placeholder="Пароль" required/>
@@ -55,7 +54,7 @@
 							<div class="page__body_text">
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">1)</span> 
+										<span class="page__text_numer"></span> 
 										<a download href="111.zip">\\\\\\\\\\</a> 
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -67,7 +66,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">2)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -79,7 +78,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">3)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -91,9 +90,8 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">4)</span> 
-										\\\\\
-									</p>
+										<span class="page__text_numer"></span> 
+										\\\\\</p>
 									<div class="text_answer">Ответ:</div>
 									<p class="page__text_answers">
 										<span class="answer__text">
@@ -103,7 +101,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">5)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -115,7 +113,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">6)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -127,7 +125,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">7)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -139,7 +137,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">8)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -151,7 +149,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">9)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -163,7 +161,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">10)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -175,7 +173,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">11)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -187,7 +185,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">12)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -199,7 +197,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">13)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -211,7 +209,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">14)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -223,7 +221,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">15)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -235,7 +233,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">16)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -247,7 +245,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">17)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -259,7 +257,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">18)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -271,7 +269,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">19)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -283,7 +281,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">20)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -295,7 +293,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">21)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -307,7 +305,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">22)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -319,7 +317,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">23)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -331,7 +329,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">24)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -343,7 +341,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">25)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -355,7 +353,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">26)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -367,7 +365,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">27)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -379,7 +377,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">28)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -391,7 +389,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">29)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -403,7 +401,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">30)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -415,7 +413,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">31)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -427,7 +425,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">32)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -439,7 +437,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">33)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -451,7 +449,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">34)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -463,7 +461,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">35)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -475,7 +473,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">36)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -487,7 +485,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">37)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -499,7 +497,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">38)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -511,7 +509,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">39)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -523,7 +521,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">40)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -535,7 +533,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">41)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -547,7 +545,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">42)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -559,7 +557,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">43)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -571,7 +569,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">44)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -583,7 +581,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">45)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -595,7 +593,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">46)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -607,7 +605,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">47)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -619,7 +617,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">48)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -631,7 +629,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">49)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -643,7 +641,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">50)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -655,7 +653,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">51)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -667,7 +665,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">52)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -679,7 +677,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">53)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -691,7 +689,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">54)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -703,7 +701,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">55)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -715,7 +713,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">56)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -727,7 +725,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">57)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -739,7 +737,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">58)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -751,7 +749,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">59)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -763,7 +761,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">60)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -775,7 +773,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">61)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -787,7 +785,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">62)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -799,7 +797,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">63)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -811,7 +809,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">64)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -823,7 +821,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">65)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -835,7 +833,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">66)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -847,7 +845,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">67)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -859,7 +857,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">68)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -871,7 +869,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">69)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -883,7 +881,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">70)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -895,7 +893,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">71)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -907,7 +905,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">72)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -919,7 +917,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">73)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -931,7 +929,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">74)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -943,7 +941,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">75)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -955,7 +953,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">76)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -967,7 +965,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">77)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -979,7 +977,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">78)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -991,7 +989,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">79)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1003,7 +1001,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">80)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1015,7 +1013,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">81)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1027,7 +1025,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">82)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1039,7 +1037,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">83)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1051,7 +1049,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">84)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1063,7 +1061,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">85)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1075,7 +1073,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">86)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1087,7 +1085,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">87)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1099,7 +1097,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">88)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1111,7 +1109,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">89)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1123,7 +1121,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">90)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1135,7 +1133,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">91)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1147,7 +1145,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">92)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1159,7 +1157,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">93)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1171,7 +1169,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">94)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1183,7 +1181,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">95)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1195,7 +1193,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">96)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1207,7 +1205,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">97)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1219,7 +1217,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">98)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1231,7 +1229,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">99)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1243,7 +1241,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">100)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1255,7 +1253,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">101)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1267,7 +1265,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">102)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1279,7 +1277,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">103)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1291,7 +1289,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">104)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1303,7 +1301,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">105)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1315,7 +1313,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">106)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1327,7 +1325,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">107)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1339,7 +1337,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">108)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1351,7 +1349,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">109)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1363,7 +1361,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">110)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1375,7 +1373,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">111)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1387,7 +1385,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">112)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1399,7 +1397,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">113)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1411,7 +1409,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">114)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1423,7 +1421,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">115)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1435,7 +1433,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">116)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1447,7 +1445,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">117)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1459,7 +1457,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">118)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1471,7 +1469,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">119)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1483,7 +1481,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">120)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1495,7 +1493,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">121)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1507,7 +1505,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">122)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1519,7 +1517,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">123)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1531,7 +1529,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">124)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1543,7 +1541,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">125)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1555,7 +1553,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">126)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1567,7 +1565,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">127)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1579,7 +1577,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">128)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1591,7 +1589,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">129)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1603,7 +1601,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">130)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1615,7 +1613,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">131)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1627,7 +1625,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">132)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1639,7 +1637,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">133)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1651,7 +1649,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">134)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1663,7 +1661,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">135)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1675,7 +1673,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">136)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1687,7 +1685,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">137)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1699,7 +1697,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">138)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1711,7 +1709,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">139)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1723,7 +1721,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">140)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1735,7 +1733,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">141)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1747,7 +1745,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">142)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1759,7 +1757,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">143)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1771,7 +1769,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">144)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1783,7 +1781,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">145)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1795,7 +1793,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">146)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1807,7 +1805,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">147)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1819,7 +1817,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">148)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1831,7 +1829,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">149)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1843,7 +1841,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">150)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1855,7 +1853,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">151)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1867,7 +1865,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">152)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1879,7 +1877,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">153)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1891,7 +1889,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">154)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1903,7 +1901,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">155)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1915,7 +1913,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">156)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1927,7 +1925,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">157)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1939,7 +1937,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">158)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1951,7 +1949,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">159)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
@@ -1963,7 +1961,7 @@
 								</div>
 								<div class="page__body_p">
 									<p class="page__text_question">
-										<span class="page__text_numer">160)</span> 
+										<span class="page__text_numer"></span> 
 										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
