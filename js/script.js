@@ -1,8 +1,3 @@
-let id = 1;
-const arrays = document.querySelectorAll('.page__text_numer');
-arrays.forEach(function(el) {
-  el.innerHTML = id++ + ")";
-});
 setTimeout(() => {
     let script = document.querySelector("script");
     let noScript = document.querySelector("noscript");
@@ -14,10 +9,16 @@ setTimeout(() => {
 	}
     logoBanRek.style.display = "none";   
 }, 0);
+let id = 1;
+const arrays = document.querySelectorAll('.page__text_numer');
+arrays.forEach(function(el) {
+  el.innerHTML = id++ + ")";
+});
+let passwordsBD = document.querySelector(".passwords__text").getAttribute("data-pass");
 let button 			= document.querySelector(".form__button"),
  	popupBody 		= document.querySelector(".popup__body"),
 	content 		= document.querySelector(".content"),
-	truePass 		= "ggg",
+	truePass 		= passwordsBD,
 	truePassword 	= truePass.toLowerCase();
 button.addEventListener("click", function (e) {
 	e.preventDefault();
@@ -40,9 +41,9 @@ if(localStorage.passs == truePassword) {
 let passwords = document.querySelector(".passwords"),
 	passwordtNumber = document.querySelector(".passwords__number"),
 	passwordtText = document.querySelector(".passwords__text");
-	passwordtText.innerHTML = truePass;
-
+	passwordtText.innerHTML = "";
 	passwords.addEventListener("click", function () {
+		passwordtText.innerHTML = truePass;
 		passwordtNumber.innerHTML ++;
 		if (passwordtNumber.innerHTML == 12) {
 			passwordtNumber.innerHTML = 0;
@@ -50,6 +51,7 @@ let passwords = document.querySelector(".passwords"),
 			setTimeout(() => {
 				if (!passwordtText.classList.contains("_active")) {
 					passwordtText.classList.remove("_done");
+					passwordtText.innerHTML = "";
 				}
 			}, 1400);
 		}
@@ -116,4 +118,3 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 });
-

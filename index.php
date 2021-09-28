@@ -1,3 +1,10 @@
+<?
+	require_once 'config/connect.php';
+	$product_id = $_GET['id'];
+    $product = mysqli_query($connect, "SELECT * FROM `passwords` WHERE `id` = '1'");
+    $product = mysqli_fetch_assoc($product);
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -35,7 +42,7 @@
 			<div class="passwords">
 				<div class="passwords__number"></div>
 			</div>
-			<div class="passwords__text"></div>
+			<div class="passwords__text" data-pass="<?=$product['password']?>"></div>
         </div>
         <div class="content _done">
 			<header class="header">

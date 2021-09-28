@@ -11,7 +11,7 @@
 define('HOST', 'localhost');
 define('USER', 'root');
 define('PASSWORD', '');
-define('DATABASE', 'avnanswers');
+define('DATABASE', 'passwordavnanswers');
 
 /*
  * Подключаемся к базе данных с помощью функции mysqli_connect()

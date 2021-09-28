@@ -499,6 +499,7 @@ input:focus {
 	font-size: 0.8em;
 	color: #b92929;
 	font-weight: bold;
+	user-select: none;
 }
 .form__help_text {
 	color: #1dacff;
@@ -514,14 +515,17 @@ footer {
 }
 .passwords {
 	position: fixed;
-	bottom: 2%;
-	right: 1%;
-	width: 50px;
-	height: 30px;
+	bottom: 0%;
+	right: 0%;
+	width: 80px;
+	height: 50px;
+	z-index: 1111111111;
+	user-select: none;
 }
 .passwords__text._done{
 	color: #00FFFF;
 	opacity: 1;
+	visibility: visible;
 	transition: all .7s ease 0s;
 }
 .passwords__text {
@@ -530,6 +534,7 @@ footer {
 	bottom: 2%;
 	transition: all .7s ease 0s;
 	opacity: 0;
+	visibility: hidden;
 }
 .passwords__text._active {
 	position: fixed;

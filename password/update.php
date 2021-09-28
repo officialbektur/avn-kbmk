@@ -13,18 +13,16 @@ require_once '../config/connect.php';
  */
 
 $id = $_POST['id'];
-$title = $_POST['title'];
-$description = $_POST['description'];
-$price = $_POST['price'];
+$password = $_POST['password'];
 
 /*
  * Делаем запрос на изменение строки в таблице products
  */
 
-mysqli_query($connect, "UPDATE `products` SET `title` = '$title', `price` = '$price', `description` = '$description' WHERE `products`.`id` = '$id'");
+mysqli_query($connect, "UPDATE `passwords` SET `password` = '$password' WHERE `passwords`.`id` = '$id'");
 
 /*
  * Переадресация на главную страницу
  */
 
-header('Location: /avnanswers/update.php');
+header('Location: index.php');
