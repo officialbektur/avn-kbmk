@@ -8,22 +8,30 @@
  * DATABASE - название базы данных, к которой мы подключаемся
  */
 
+// define('HOST', 'localhost');
+// define('USER', 'root');
+// define('PASSWORD', '');
+// define('DATABASE', 'passwordavnanswers');
+
+
 define('HOST', 'localhost');
-define('USER', 'root');
-define('PASSWORD', '');
-define('DATABASE', 'passwordavnanswers');
+define('USER', 'id17644572_avnanswers');
+define('PASSWORD', 'd#_T5cnAR$@H7VZc');
+define('DATABASE', 'id17644572_passwords');
+
+
 
 /*
  * Подключаемся к базе данных с помощью функции mysqli_connect()
- */
+*/
 
 $connect = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
 
 /*
  * Делаем проверку соединения
  * Если есть ошибки, останавливаем код и выводим сообщение с ошибкой
- */
+*/
 
 if (!$connect) {
-    die('Error connect to database!');
+    die('Ошибка подключения к базе данных!');
 }

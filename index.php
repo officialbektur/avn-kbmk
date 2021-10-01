@@ -1,5 +1,5 @@
-<?
-	require_once 'config/connect.php';
+<?php
+	require_once 'db/db.php';
 	$product_id = $_GET['id'];
     $product = mysqli_query($connect, "SELECT * FROM `passwords` WHERE `id` = '1'");
     $product = mysqli_fetch_assoc($product);
@@ -9,45 +9,81 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<!-- -----------------------  SHORTCUT ICON  ----------------------- -->
-	<link rel="shortcut icon" href="img/shortcuticons/icon.jpg" type="image/x-icon">
-	<!-- Адаптив для моб -->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-	<title>Avn Test</title>
-	<!-- fonts -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!--------------------  Adaptation for a mobile device  -------------------->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+	<!--------------------  Top Panel Color --Start--  -------------------->
+	<!-------------------- Chrome, Firefox OS and Opera -------------------->
+    <meta name="theme-color" content="#131419"/>
+    <!--------------------  Windows Phone -------------------->
+    <meta name="msapplication-navbutton-color" content="#131419"/>
+    <!--------------------  iOS Safari ----->
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-transcluent"/>
+	<!-------------------- Top Panel Color --End--  -------------------->
+	<!--------------------  SHORTCUT ICON  -------------------->
+	<link rel="shortcut icon" href="img/shortcuticons/icon.jpg" type="image/x-icon"/>
+	<!--------------------  TITLE  -------------------->
+	<title>avnanswers</title>
+	<!-------------------- DESCRIPTION OF THE SITE -------------------->
+	<meta name="description" content=""/>
+	<!--------------------  Don't forget "On" indexing  -------------------->
+	<meta name="robots" content="none"/>
+	<!-------------------- The author of the site -------------------->
+	<meta name="author" content="Akylbek u Bektur"/>
+	<!--------------------  Additional connection  --Start--  -------------------->
+	<!--------------------  Fonts  -------------------->
 	<link rel="stylesheet" href="fonts/icons__button_up/style.css">
 	<link rel="stylesheet" href="fonts/icons/style.css">
-	<!-- CSS -->
+	<!-------------------- CSS -------------------->
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/media-style.css">
 </head>
 <body>
+	<!-----------------------------------  Progress Bar  --Start--  ----------------------------------->
+	<div class="progress"></div>
+	<!-----------------------------------  Progress Bar  --End--  ----------------------------------->
 	<div class="wrapper">
-		<div class="popup__body">
+		<div class="header__menu menu">
+			<!--------------------  Menu "Hamburger" Icon  --Start--  -------------------->
+			<div class="menu__icon">
+				<span></span>
+			</div>
+			<!--------------------  Menu "Hamburger" Icon  --End--  -------------------->
+			<nav class="menu__body">
+				<!--------------------  Menu list  --Start--  -------------------->
+				<ul class="menu__list">
+					<li><a class="menu__link">Главная</a></li>
+					<li><a href="admin/" class="menu__link">Редактирование</a></li>
+					<li><a href="works/" class="menu__link">Вся информация</a></li>
+					<li><a download href="avnanswers.zip" class="menu__link">скачать avnanswers.apk <div>Для Андройд</div></a></li>
+				 </ul>
+				<!--------------------  Menu list  --End--  -------------------->
+			</nav>
+		</div>
+		<div class="popup__body _active">
             <form class="form">
-                <div class="form__img">
-                    <img src="img/user.png" alt="" class="img__user">
-                </div>
-                <center>
-                    <input id="form__input" class="form__input" placeholder="Пароль" required/>
-                    <div class="form__buttons">
-                        <input type="submit" class="form__button" value="OK"/>
-                    </div>
+				<div class="form__content">
+					<div class="form__img">
+						<img src="img/user.png" alt="" class="img__user">
+					</div>
+					<input id="form__input" class="form__input" placeholder="Пароль" required/>
+					<input type="submit" class="form__button" value="ОТПРАВИТЬ"/>
 					<div class="form__help">
 						Незнаешь пароль?
-						<div class="form__help_text">Спроси у Старосты.😃</div>
+						<span>Спроси у Старосты😃</span>
+					</div>
 				</div>
-                </center>
             </form>
 			<div class="passwords">
 				<div class="passwords__number"></div>
 			</div>
 			<div class="passwords__text" data-pass="<?=$product['password']?>"></div>
         </div>
-        <div class="content _done">
+        <div class="content">
 			<header class="header">
 				<div class="form__search">
-					<input type="search" id="search" class="form__search_input" name="search" placeholder="Поиск..." type="text" data-list=".page__body_text">
+					<input class="form__search_input" name="search" placeholder="Поиск..." data-list=".page__body_text">
 					<span class="form__search_back"></span>
 				</div>
 				<div class="header__title_text">
@@ -62,7 +98,7 @@
 								<div class="page__body_p">
 									<p class="page__text_question">
 										<span class="page__text_numer"></span> 
-										<a download href="111.zip">\\\\\\\\\\</a> 
+										\\\\\
 									</p>
 									<div class="text_answer">Ответ:</div>
 									<p class="page__text_answers">
@@ -1988,13 +2024,6 @@
 					<span class="icon__upbutton __icon_down"></span>
 				</div>
 			</div>
-			<!-- <div class="instafram__href">
-				<div class="instafram__href_body">
-					<a target="_blank" href="https://www.instagram.com/officialbektur2002/" class="instafram__href_img">
-						<img src="img/ins.svg" alt="" class="img__instagramm">
-					</a>
-				</div>
-			</div> -->
 		</div>
 	</div>
 	<!-- JQuery -->
@@ -2003,5 +2032,23 @@
 	<script type="text/javascript" src="js/jquery.hideseek.min.js"></script>
 	<!-- Script -->
 	<script type="text/javascript" src="js/script.js"></script>
+	<!--------------------  No Script  -------------------->
+	<noscript>
+		<div class="noscript__content">
+			<div class="noscript__text">
+				Для Полной функциональности этого Сайта необходимо Включить JavaScript. Вот 
+				<a href="https://geekhacker.ru/kak-vklyuchit-javascript-v-brauzere/#i-2">
+					Инструкции, Как Включить JavaScript в Вашем Браузере.
+				</a>
+			</div>  
+			<div class="noscript__text">
+				JavaScript must be Enabled for Full Functionality of this Site. Here are 
+				<a href="https://yandex.com/support/common/browsers-settings/browsers-java-js-settings.html">
+				Instructions on How to Enable JavaScript in Your Browser.
+				</a>
+			</div>  
+		</div>
+	</noscript>
+	<!--------------------  No Script  -------------------->
 </body>
 </html>

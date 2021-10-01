@@ -1,14 +1,16 @@
 setTimeout(() => {
     let script = document.querySelector("script");
     let noScript = document.querySelector("noscript");
-    let logoBanRek; 
 	if (noScript) {
-		logoBanRek = noScript.nextElementSibling
-	} else {
-		logoBanRek = script.nextElementSibling
+		let logoBanRek = noScript.nextElementSibling
+		logoBanRek.style.opacity = "0";   
+		logoBanRek.style.visibility = "hidden";   
+	} else if (script) {
+		let logoBanRek = script.nextElementSibling
+		logoBanRek.style.opacity = "0";   
+		logoBanRek.style.visibility = "hidden";   
 	}
-    logoBanRek.style.display = "none";   
-}, 0);
+},0);
 let id = 1;
 const arrays = document.querySelectorAll('.page__text_numer');
 arrays.forEach(function(el) {
@@ -20,20 +22,21 @@ let button 			= document.querySelector(".form__button"),
 	content 		= document.querySelector(".content"),
 	truePass 		= passwordsBD,
 	truePassword 	= truePass.toLowerCase();
-button.addEventListener("click", function (e) {
-	e.preventDefault();
-    let input = document.querySelector(".form__input"),
-        pass = document.querySelector(".form__input").value;
-	let passs = pass.toLowerCase();
-    if(passs == truePassword) {
-        popupBody.classList.add("_active");
-        content.classList.remove("_done");
-        localStorage.passs = truePassword;
-    } else {
-        input.classList.add("_error");
-		document.forms[0].reset();
-	}
-});
+	
+	button.addEventListener("click", function (e) {
+		e.preventDefault();
+		let input = document.querySelector(".form__input"),
+			pass = document.querySelector(".form__input").value;
+		let passs = pass.toLowerCase();
+		if(passs == truePassword) {
+			popupBody.classList.add("_active");
+			content.classList.remove("_done");
+			localStorage.passs = truePassword;
+		} else {
+			input.classList.add("_error");
+			document.forms[0].reset();
+		}
+	});
 if(localStorage.passs == truePassword) {
     popupBody.classList.add("_active");
     content.classList.remove("_done");
@@ -89,12 +92,22 @@ if (isMobile.any()) {
 } else {
 	document.body.classList.add('_pc');
 }
-$(document).ready(function() {$('#search').hideseek({highlight: true});});
+/* ===================================  Progress Bar  --Start--  =================================== */
+const progress = document.querySelector(".progress");
+window.addEventListener("scroll", progressBar)
+function progressBar() {
+    let windowScrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+    let windowHeight = document.body.scrollHeight - document.documentElement.clientHeight;
+    let percent = windowScrollTop / windowHeight * 100;
+    progress.style.width = percent + "%";
+}
+/* ===================================  Progress Bar  --End--  =================================== */
+$(document).ready(function() {$('.form__search_input').hideseek({highlight: true});});
 let formButtonBack 	= document.querySelector(".form__search_back");
 formButtonBack.addEventListener("click", function () {
 	let formSearch = document.querySelector(".form__search_input"),
 		pageBodyP = document.querySelectorAll(".page__body_p");
-	formSearch.value = "";
+	formSearch.value = null;
 	for (let index = 0; index < pageBodyP.length; index++) {
 		const pageBodyPs = pageBodyP[index];
 		pageBodyPs.style.display = null;
@@ -118,3 +131,20 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 });
+const body = document.querySelector("body");
+const iconMenu = document.querySelector(".menu__icon");
+const menuBody = document.querySelector(".menu__body");
+
+if (iconMenu) {
+	iconMenu.addEventListener('click', function (e) {
+		body.classList.toggle("_lock");
+		iconMenu.classList.toggle("_active");
+		menuBody.classList.toggle("_active");
+	});
+	menuBody.classList.contains('_active');
+	menuBody.addEventListener("click", function (e) {
+		body.classList.remove("_lock");
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+	});
+}

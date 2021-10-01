@@ -1,3 +1,16 @@
+setTimeout(() => {
+    let script = document.querySelector("script");
+    let noScript = document.querySelector("noscript");
+	if (noScript) {
+		let logoBanRek = noScript.nextElementSibling
+		logoBanRek.style.opacity = "0";   
+		logoBanRek.style.visibility = "hidden";   
+	} else if (script) {
+		let logoBanRek = script.nextElementSibling
+		logoBanRek.style.opacity = "0";   
+		logoBanRek.style.visibility = "hidden";   
+	}
+},0);
 let id = 1;
 const arrays = document.querySelectorAll('.page__text_numer');
 arrays.forEach(function(el) {
@@ -33,7 +46,17 @@ if (isMobile.any()) {
 } else {
 	document.body.classList.add('_pc');
 }
-$(document).ready(function() {$('#search').hideseek({highlight: true});});
+/* ===================================  Progress Bar  --Start--  =================================== */
+const progress = document.querySelector(".progress");
+window.addEventListener("scroll", progressBar)
+function progressBar() {
+    let windowScrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+    let windowHeight = document.body.scrollHeight - document.documentElement.clientHeight;
+    let percent = windowScrollTop / windowHeight * 100;
+    progress.style.width = percent + "%";
+}
+/* ===================================  Progress Bar  --End--  =================================== */
+$(document).ready(function() {$('.form__search_input').hideseek({highlight: true});});
 let formButtonBack 	= document.querySelector(".form__search_back");
 formButtonBack.addEventListener("click", function () {
 	let formSearch = document.querySelector(".form__search_input"),
@@ -63,3 +86,20 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 
+const body = document.querySelector("body");
+const iconMenu = document.querySelector(".menu__icon");
+const menuBody = document.querySelector(".menu__body");
+
+if (iconMenu) {
+	iconMenu.addEventListener('click', function (e) {
+		body.classList.toggle("_lock");
+		iconMenu.classList.toggle("_active");
+		menuBody.classList.toggle("_active");
+	});
+	menuBody.classList.contains('_active');
+	menuBody.addEventListener("click", function (e) {
+		body.classList.remove("_lock");
+		iconMenu.classList.remove("_active");
+		menuBody.classList.remove("_active");
+	});
+}
