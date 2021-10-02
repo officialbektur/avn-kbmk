@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 	require_once 'db/db.php';
 	$product_id = $_GET['id'];
     $product = mysqli_query($connect, "SELECT * FROM `passwords` WHERE `id` = '1'");
@@ -56,7 +56,7 @@
 					<li><a class="menu__link">Главная</a></li>
 					<li><a href="admin/" class="menu__link">Редактирование</a></li>
 					<li><a href="works/" class="menu__link">Вся информация</a></li>
-					<li><a download href="avnanswers.zip" class="menu__link">скачать avnanswers.apk <div>Для Андройд</div></a></li>
+					<li><a download href="apk/avnanswers.apk" class="menu__link">скачать avnanswers.apk <div>Для Андройд</div></a></li>
 				 </ul>
 				<!--------------------  Menu list  --End--  -------------------->
 			</nav>

@@ -1,14 +1,18 @@
 setTimeout(() => {
-    let script = document.querySelector("script");
-    let noScript = document.querySelector("noscript");
+	let noScript = document.querySelector("noScript");
+	let script = document.querySelector("script");
 	if (noScript) {
-		let logoBanRek = noScript.nextElementSibling
-		logoBanRek.style.opacity = "0";   
-		logoBanRek.style.visibility = "hidden";   
+		let logoBanRek = noScript.nextElementSibling;
+		if (logoBanRek > 0) {
+			logoBanRek.style.opacity = "0";   
+			logoBanRek.style.visibility = "hidden";  
+		}
 	} else if (script) {
-		let logoBanRek = script.nextElementSibling
-		logoBanRek.style.opacity = "0";   
-		logoBanRek.style.visibility = "hidden";   
+		let logoBanRek = script.nextElementSibling;
+		if (logoBanRek > 0) {
+			logoBanRek.style.opacity = "0";   
+			logoBanRek.style.visibility = "hidden";  
+		}
 	}
 },0);
 let id = 1;

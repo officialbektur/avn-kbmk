@@ -16,7 +16,5 @@ $password = $_POST['password'];
 mysqli_query($connect, "UPDATE `passwords` SET `password` = '$password' WHERE `passwords`.`id` = '$id'");
 
 /* Переадресация на главную страницу */
-
-header('Location: ../update/index.php');
-
+exit("<meta http-equiv='refresh' content='0; url=/avnanswers/adminpassword/update/'>");
 ?>

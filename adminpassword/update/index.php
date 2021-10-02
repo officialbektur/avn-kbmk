@@ -1,4 +1,4 @@
-<?php
+﻿<?php
     require_once '../../db/db.php';
     $product_id = $_GET['id'];
     $product = mysqli_query($connect, "SELECT * FROM `passwords` WHERE `id` = '1'");
@@ -44,10 +44,7 @@
         <nav class="menu__body">
             <!--------------------  Menu list  --Start--  -------------------->
             <ul class="menu__list">
-                <li><a href="../../index.html" class="menu__link">Главная</a></li>
-                <li><a class="menu__link">Редактирование</a></li>
-                <li><a href="../../works/index.html" class="menu__link">Вся информация</a></li>
-				<li><a download href="adminpassword.apk" class="menu__link">скачать adminpassword.apk <div>Для Андройд</div></a></li>
+				<li><a download href="../../apk/adminpassword.apk" class="menu__link">скачать<div>adminpassword.apk</div><div>Для Андройд</div></a></li>
             </ul>
             <!--------------------  Menu list  --End--  -------------------->
         </nav>
@@ -65,18 +62,52 @@
     </div>
     <script>
         setTimeout(() => {
+            let noScript = document.querySelector("noScript");
             let script = document.querySelector("script");
-            let noScript = document.querySelector("noscript");
             if (noScript) {
-                let logoBanRek = noScript.nextElementSibling
-                logoBanRek.style.opacity = "0";   
-                logoBanRek.style.visibility = "hidden";   
+                let logoBanRek = noScript.nextElementSibling;
+                if (logoBanRek > 0) {
+                    logoBanRek.style.opacity = "0";   
+                    logoBanRek.style.visibility = "hidden";  
+                }
             } else if (script) {
-                let logoBanRek = script.nextElementSibling
-                logoBanRek.style.opacity = "0";   
-                logoBanRek.style.visibility = "hidden";   
+                let logoBanRek = script.nextElementSibling;
+                if (logoBanRek > 0) {
+                    logoBanRek.style.opacity = "0";   
+                    logoBanRek.style.visibility = "hidden";  
+                }
             }
         },0);
+        var isMobile = {
+            Android: function () {
+                return navigator.userAgent.match(/Android/i)
+            },
+            BlackBerry: function () {
+                return navigator.userAgent.match(/BlackBerry/i)
+            },
+            iOS: function () {
+                return navigator.userAgent.match(/iPhone|iPad|iPod/i)
+            },
+            Opera: function () {
+                return navigator.userAgent.match(/Opera Mini/i)
+            },
+            Windows: function () {
+                return navigator.userAgent.match(/IEMobile/i)
+            },
+            any: function () {
+                return (
+                    isMobile.Android() ||
+                    isMobile.BlackBerry() ||
+                    isMobile.iOS() ||
+                    isMobile.Opera() ||
+                    isMobile.Windows());
+            }
+        };
+        if (isMobile.any()) {
+            document.body.classList.add('_mobile');
+        } else {
+            document.body.classList.add('_pc');
+        }
         const body = document.querySelector("body");
         const iconMenu = document.querySelector(".menu__icon");
         const menuBody = document.querySelector(".menu__body");

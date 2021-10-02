@@ -121,7 +121,7 @@ body {
     justify-content: center;
     align-items: center;
     background-color: rgb(10, 7, 15);
-    z-index: 999999999999999999999999999999999999999999999999;
+    z-index: 95;
     overflow: hidden;
 }
 .passwords__form {
@@ -192,7 +192,7 @@ body {
 .header__menu  {
 	position: fixed;
 	left: 12px;
-	bottom: 6%;
+	bottom: 7.6%;
 	z-index: 100;
 }
 .menu__body {
@@ -201,11 +201,13 @@ body {
 	left: -100%;
 	width: 100%;
 	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	-webkit-transition: left 0.5s ease 0s;
 		-o-transition: left 0.5s ease 0s;
 			transition: left 0.5s ease 0s;
 	background-color: rgba(0, 0, 0, 0.85);
-	padding: 100px 30px 30px 30px;
 	z-index: 100;
 	overflow-y: auto;
 }
@@ -263,9 +265,8 @@ body {
 	transform: rotate(45deg) translate(0px, 50%)
 }
 /* ====================  Burger menu icon  --End--  ==================== */
-
 .menu__list {
-	padding: 0px 20%;
+	padding: 0px 5%;
 	position: relative;
 	z-index: 100;
 	display: flex;

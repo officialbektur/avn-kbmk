@@ -8,16 +8,16 @@
  * DATABASE - название базы данных, к которой мы подключаемся
  */
 
-// define('HOST', 'localhost');
-// define('USER', 'root');
-// define('PASSWORD', '');
-// define('DATABASE', 'passwordavnanswers');
-
-
 define('HOST', 'localhost');
-define('USER', 'id17644572_avnanswers');
-define('PASSWORD', 'd#_T5cnAR$@H7VZc');
-define('DATABASE', 'id17644572_passwords');
+define('USER', 'root');
+define('PASSWORD', '');
+define('DATABASE', 'passwordavnanswers');
+
+
+// define('HOST', 'localhost');
+// define('USER', 'id17644572_avnanswers');
+// define('PASSWORD', 'd#_T5cnAR$@H7VZc');
+// define('DATABASE', 'id17644572_passwords');
 
 
 
