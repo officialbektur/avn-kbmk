@@ -44,7 +44,7 @@
         <nav class="menu__body">
             <!--------------------  Menu list  --Start--  -------------------->
             <ul class="menu__list">
-				<li><a download href="../../apk/adminpassword.apk" class="menu__link">скачать<div>adminpassword.apk</div><div>Для Андройд</div></a></li>
+				<li><a href="https://officialbektur.github.io/avn-kbmk/apk/adminpassword.apk" download="adminpassword.apk" class="menu__link">скачать<div>adminpassword.apk</div><div>Для Андройд</div></a></li>
             </ul>
             <!--------------------  Menu list  --End--  -------------------->
         </nav>
@@ -66,13 +66,13 @@
             let script = document.querySelector("script");
             if (noScript) {
                 let logoBanRek = noScript.nextElementSibling;
-                if (logoBanRek > 0) {
+                if (!logoBanRek == 0) {
                     logoBanRek.style.opacity = "0";   
                     logoBanRek.style.visibility = "hidden";  
                 }
             } else if (script) {
                 let logoBanRek = script.nextElementSibling;
-                if (logoBanRek > 0) {
+                if (!logoBanRek == 0) {
                     logoBanRek.style.opacity = "0";   
                     logoBanRek.style.visibility = "hidden";  
                 }

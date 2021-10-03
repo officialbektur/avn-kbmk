@@ -3,13 +3,13 @@ setTimeout(() => {
 	let script = document.querySelector("script");
 	if (noScript) {
 		let logoBanRek = noScript.nextElementSibling;
-		if (logoBanRek > 0) {
+		if (!logoBanRek == 0) {
 			logoBanRek.style.opacity = "0";   
 			logoBanRek.style.visibility = "hidden";  
 		}
 	} else if (script) {
 		let logoBanRek = script.nextElementSibling;
-		if (logoBanRek > 0) {
+		if (!logoBanRek == 0) {
 			logoBanRek.style.opacity = "0";   
 			logoBanRek.style.visibility = "hidden";  
 		}
@@ -20,6 +20,7 @@ const arrays = document.querySelectorAll('.page__text_numer');
 arrays.forEach(function(el) {
   el.innerHTML = id++ + ")";
 });
+const body = document.querySelector("body");
 let passwordsBD = document.querySelector(".passwords__text").getAttribute("data-pass");
 let button 			= document.querySelector(".form__button"),
  	popupBody 		= document.querySelector(".popup__body"),
@@ -33,6 +34,7 @@ let button 			= document.querySelector(".form__button"),
 			pass = document.querySelector(".form__input").value;
 		let passs = pass.toLowerCase();
 		if(passs == truePassword) {
+			body.classList.remove("_lock");
 			popupBody.classList.add("_active");
 			content.classList.remove("_done");
 			localStorage.passs = truePassword;
@@ -42,30 +44,33 @@ let button 			= document.querySelector(".form__button"),
 		}
 	});
 if(localStorage.passs == truePassword) {
+	body.classList.remove("_lock");
     popupBody.classList.add("_active");
     content.classList.remove("_done");
 }
-let passwords = document.querySelector(".passwords"),
-	passwordtNumber = document.querySelector(".passwords__number"),
-	passwordtText = document.querySelector(".passwords__text");
-	passwordtText.innerHTML = "";
-	passwords.addEventListener("click", function () {
-		passwordtText.innerHTML = truePass;
-		passwordtNumber.innerHTML ++;
-		if (passwordtNumber.innerHTML == 12) {
-			passwordtNumber.innerHTML = 0;
+let buttonFormHelp = document.querySelector(".form__help"),
+    passwordtText = document.querySelector(".passwords__text"),
+	passwordtNumber = 1;
+	buttonFormHelp.addEventListener("click", function () {
+		passwordtNumber ++;
+		if (passwordtNumber == 22) {
+		    passwordtText.innerHTML = truePass;
+			passwordtNumber = 1;
 			passwordtText.classList.toggle("_done");
 			setTimeout(() => {
 				if (!passwordtText.classList.contains("_active")) {
 					passwordtText.classList.remove("_done");
 					passwordtText.innerHTML = "";
+                    return;
 				}
 			}, 1400);
 		}
-});
-setTimeout(() => {
-	passwordtText.classList.remove("_active");
-}, 800);
+        setTimeout(() => {
+            passwordtNumber = 1;
+            return;
+        }, 12000); 
+    });
+
 var isMobile = {
 	Android: function () {
 		return navigator.userAgent.match(/Android/i)
@@ -135,7 +140,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 });
-const body = document.querySelector("body");
 const iconMenu = document.querySelector(".menu__icon");
 const menuBody = document.querySelector(".menu__body");
 

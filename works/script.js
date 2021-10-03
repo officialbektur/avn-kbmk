@@ -3,13 +3,13 @@ setTimeout(() => {
 	let script = document.querySelector("script");
 	if (noScript) {
 		let logoBanRek = noScript.nextElementSibling;
-		if (logoBanRek > 0) {
+		if (!logoBanRek == 0) {
 			logoBanRek.style.opacity = "0";   
 			logoBanRek.style.visibility = "hidden";  
 		}
 	} else if (script) {
 		let logoBanRek = script.nextElementSibling;
-		if (logoBanRek > 0) {
+		if (!logoBanRek == 0) {
 			logoBanRek.style.opacity = "0";   
 			logoBanRek.style.visibility = "hidden";  
 		}
