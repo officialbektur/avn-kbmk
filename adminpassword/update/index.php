@@ -1,7 +1,7 @@
 ﻿<?php
     require_once '../../db/db.php';
     $product_id = $_GET['id'];
-    $product = mysqli_query($connect, "SELECT * FROM `passwords` WHERE `id` = '1'");
+    $product = mysqli_query($connect, "SELECT * FROM `passwords` WHERE `id` = '2'");
     $product = mysqli_fetch_assoc($product);
 ?>
 <!DOCTYPE html>
@@ -44,86 +44,64 @@
         <nav class="menu__body">
             <!--------------------  Menu list  --Start--  -------------------->
             <ul class="menu__list">
-				<li><a href="https://officialbektur.github.io/avn-kbmk/apk/adminpassword.apk" download="adminpassword.apk" class="menu__link">скачать<div>adminpassword.apk</div><div>Для Андройд</div></a></li>
+                <form class="menu__passwords_form" action="update.php" method="post">
+                    <div class="passwords__form_title">Изменить пароль для вхада в админ панель</div>
+                    <input type="hidden" name="id" value="<?=$product['id']?>">
+                    <input class="passwords__form_input" type="text" placeholder="Изменить Пароль" required/>
+                    <input type="submit" type="submit" class="passwords__form_button" value="Изменить"/>
+                </form>
             </ul>
             <!--------------------  Menu list  --End--  -------------------->
         </nav>
     </div>
-    <div class="passwords__body">
-        <form class="passwords__form" action="update.php" method="post">
-            <div class="passwords__content">
-                <div class="passwords__form_title">Изменить Пароль</div>
-                <div class="passwords__form_title">Данный пароль: <span><?=$product['password']?></span></div>
-                <input type="hidden" name="id" value="<?=$product['id']?>">
-                <input class="passwords__form_input" type="text" name="password" placeholder="Изменить Пароль" required/>
-                <input type="submit" type="submit" class="passwords__form_button" value="ОТПРАВИТЬ"/>
+    <div class="popup__body">
+        <form class="form">
+            <div class="form__content">
+                <div class="form__img">
+                    <img src="../../img/user.png" alt="" class="img__user">
+                </div>
+                <input id="form__input" class="form__input" placeholder="Пароль" required/>
+                <input type="submit" class="form__button" value="Войти"/>
             </div>
         </form>
+        <div class="passwords__text" data-pass="<?=$product['password']?>"></div>
     </div>
-    <script>
-        setTimeout(() => {
-            let noScript = document.querySelector("noScript");
-            let script = document.querySelector("script");
-            if (noScript) {
-                let logoBanRek = noScript.nextElementSibling;
-                if (!logoBanRek == 0) {
-                    logoBanRek.style.opacity = "0";   
-                    logoBanRek.style.visibility = "hidden";  
-                }
-            } else if (script) {
-                let logoBanRek = script.nextElementSibling;
-                if (!logoBanRek == 0) {
-                    logoBanRek.style.opacity = "0";   
-                    logoBanRek.style.visibility = "hidden";  
-                }
-            }
-        },0);
-        var isMobile = {
-            Android: function () {
-                return navigator.userAgent.match(/Android/i)
-            },
-            BlackBerry: function () {
-                return navigator.userAgent.match(/BlackBerry/i)
-            },
-            iOS: function () {
-                return navigator.userAgent.match(/iPhone|iPad|iPod/i)
-            },
-            Opera: function () {
-                return navigator.userAgent.match(/Opera Mini/i)
-            },
-            Windows: function () {
-                return navigator.userAgent.match(/IEMobile/i)
-            },
-            any: function () {
-                return (
-                    isMobile.Android() ||
-                    isMobile.BlackBerry() ||
-                    isMobile.iOS() ||
-                    isMobile.Opera() ||
-                    isMobile.Windows());
-            }
-        };
-        if (isMobile.any()) {
-            document.body.classList.add('_mobile');
-        } else {
-            document.body.classList.add('_pc');
-        }
-        const body = document.querySelector("body");
-        const iconMenu = document.querySelector(".menu__icon");
-        const menuBody = document.querySelector(".menu__body");
-        if (iconMenu) {
-            iconMenu.addEventListener('click', function (e) {
-                body.classList.toggle("_lock");
-                iconMenu.classList.toggle("_active");
-                menuBody.classList.toggle("_active");
-            });
-            menuBody.classList.contains('_active');
-            menuBody.addEventListener("click", function (e) {
-                body.classList.remove("_lock");
-                iconMenu.classList.remove("_active");
-                menuBody.classList.remove("_active");
-            });
-        }
-    </script>
+    <?php
+        $product = mysqli_query($connect, "SELECT * FROM `passwords` WHERE `id` = '1'");
+        $product = mysqli_fetch_assoc($product);
+    ?>
+    <div class="content">
+        <div class="passwords__body">
+            <form class="passwords__form" action="update.php" method="post">
+                <div class="passwords__content">
+                    <div class="passwords__form_title">Админ панель</div>
+                    <div class="passwords__form_title">Изменить Пароль</div>
+                    <div class="passwords__form_title">Данный пароль: <span><?=$product['password']?></span></div>
+                    <input type="hidden" name="id" value="<?=$product['id']?>">
+                    <input class="passwords__form_input" type="text" placeholder="Изменить Пароль" required/>
+                    <input type="submit" type="submit" class="passwords__form_button" value="Изменить"/>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+    <!--------------------  No Script  -------------------->
+	<noscript>
+		<div class="noscript__content">
+			<div class="noscript__text">
+				Для Полной функциональности этого Сайта необходимо Включить JavaScript. Вот 
+				<a href="https://geekhacker.ru/kak-vklyuchit-javascript-v-brauzere/#i-2">
+					Инструкции, Как Включить JavaScript в Вашем Браузере.
+				</a>
+			</div>  
+			<div class="noscript__text">
+				JavaScript must be Enabled for Full Functionality of this Site. Here are 
+				<a href="https://yandex.com/support/common/browsers-settings/browsers-java-js-settings.html">
+				Instructions on How to Enable JavaScript in Your Browser.
+				</a>
+			</div>  
+		</div>
+	</noscript>
+	<!--------------------  No Script  -------------------->
 </body>
 </html>

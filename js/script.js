@@ -15,19 +15,17 @@ setTimeout(() => {
 		}
 	}
 },0);
-let id = 1;
+let number = 1;
 const arrays = document.querySelectorAll('.page__text_numer');
 arrays.forEach(function(el) {
-  el.innerHTML = id++ + ")";
+  el.innerHTML = number++ + ")";
 });
 const body = document.querySelector("body");
-let passwordsBD = document.querySelector(".passwords__text").getAttribute("data-pass");
+let truePass = document.querySelector(".passwords__text").getAttribute("data-pass");
 let button 			= document.querySelector(".form__button"),
  	popupBody 		= document.querySelector(".popup__body"),
 	content 		= document.querySelector(".content"),
-	truePass 		= passwordsBD,
 	truePassword 	= truePass.toLowerCase();
-	
 	button.addEventListener("click", function (e) {
 		e.preventDefault();
 		let input = document.querySelector(".form__input"),

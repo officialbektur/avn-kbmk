@@ -68,7 +68,7 @@
 						<img src="img/user.png" alt="" class="img__user">
 					</div>
 					<input id="form__input" class="form__input" placeholder="Пароль" required/>
-					<input type="submit" class="form__button" value="ОТПРАВИТЬ"/>
+					<input type="submit" class="form__button" value="Войти"/>
 					<div class="form__help">
 						Незнаешь пароль?
 						<span>Спроси у Старосты😃</span>

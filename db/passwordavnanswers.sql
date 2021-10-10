@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Сен 28 2021 г., 22:21
+-- Время создания: Окт 10 2021 г., 21:20
 -- Версия сервера: 8.0.24
 -- Версия PHP: 7.1.33
 
@@ -49,7 +49,8 @@ CREATE TABLE `passwords` (
 --
 
 INSERT INTO `passwords` (`id`, `password`) VALUES
-(1, 'd');
+(1, '111'),
+(2, '222');
 
 --
 -- Индексы сохранённых таблиц
@@ -82,7 +83,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT для таблицы `passwords`
 --
 ALTER TABLE `passwords`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Ограничения внешнего ключа сохраненных таблиц
