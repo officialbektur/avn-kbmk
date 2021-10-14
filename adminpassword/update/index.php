@@ -47,7 +47,7 @@
                 <form class="menu__passwords_form" action="update.php" method="post">
                     <div class="passwords__form_title">Изменить пароль для вхада в админ панель</div>
                     <input type="hidden" name="id" value="<?=$product['id']?>">
-                    <input class="passwords__form_input" type="text" placeholder="Изменить Пароль" required/>
+                    <input class="passwords__form_input" type="text" name="password" placeholder="Изменить Пароль" required/>
                     <input type="submit" type="submit" class="passwords__form_button" value="Изменить"/>
                 </form>
             </ul>
@@ -78,7 +78,7 @@
                     <div class="passwords__form_title">Изменить Пароль</div>
                     <div class="passwords__form_title">Данный пароль: <span><?=$product['password']?></span></div>
                     <input type="hidden" name="id" value="<?=$product['id']?>">
-                    <input class="passwords__form_input" type="text" placeholder="Изменить Пароль" required/>
+                    <input class="passwords__form_input" type="text" name="password" placeholder="Изменить Пароль" required/>
                     <input type="submit" type="submit" class="passwords__form_button" value="Изменить"/>
                 </div>
             </form>
