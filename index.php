@@ -40,10 +40,11 @@
 	<link rel="stylesheet" href="css/media-style.css">
 </head>
 <body class="_lock">
+	<div class="bgdnone"></div>
 	<!-----------------------------------  Progress Bar  --Start--  ----------------------------------->
 	<div class="progress"></div>
 	<!-----------------------------------  Progress Bar  --End--  ----------------------------------->
-	<div class="wrapper">
+	<div class="wrapper _done">
 		<div class="header__menu menu">
 			<!--------------------  Menu "Hamburger" Icon  --Start--  -------------------->
 			<div class="menu__icon">
@@ -76,6 +77,7 @@
 				</div>
             </form>
 			<div class="passwords__text" data-pass="<?=$product['password']?>"></div>
+			<div class="passwords__button"></div>
         </div>
         <div class="content">
 			<header class="header">

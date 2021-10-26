@@ -4,21 +4,38 @@ setTimeout(() => {
 	if (noScript) {
 		let logoBanRek = noScript.nextElementSibling;
 		if (!logoBanRek == 0) {
-			logoBanRek.style.opacity = "0";   
-			logoBanRek.style.visibility = "hidden";  
+			logoBanRek.style.opacity = "0";
+			logoBanRek.style.visibility = "hidden";
 		}
 	} else if (script) {
 		let logoBanRek = script.nextElementSibling;
 		if (!logoBanRek == 0) {
-			logoBanRek.style.opacity = "0";   
-			logoBanRek.style.visibility = "hidden";  
+			logoBanRek.style.opacity = "0";
+			logoBanRek.style.visibility = "hidden";
 		}
 	}
-},0);
+}, 0);
+let bgdnone = document.querySelector(".bgdnone");
+if (localStorage.bgdnone === "_white") {
+	bgdnone.classList.toggle("_white");
+	document.body.classList.add("_lock");
+}
+document.onkeydown = function (e) {
+	if (e.keyCode === 144) {
+		bgdnone.classList.toggle("_white");
+		document.body.classList.add("_lock");
+		if (bgdnone.classList.contains("_white")) {
+			localStorage.bgdnone = "_white";
+		} else {
+			localStorage.bgdnone = "";
+			document.body.classList.remove("_lock");
+		}
+	}
+}
 let id = 1;
 const arrays = document.querySelectorAll('.page__text_numer');
-arrays.forEach(function(el) {
-  el.innerHTML = id++ + ")";
+arrays.forEach(function (el) {
+	el.innerHTML = id++ + ")";
 });
 var isMobile = {
 	Android: function () {
@@ -54,14 +71,14 @@ if (isMobile.any()) {
 const progress = document.querySelector(".progress");
 window.addEventListener("scroll", progressBar)
 function progressBar() {
-    let windowScrollTop = document.body.scrollTop || document.documentElement.scrollTop;
-    let windowHeight = document.body.scrollHeight - document.documentElement.clientHeight;
-    let percent = windowScrollTop / windowHeight * 100;
-    progress.style.width = percent + "%";
+	let windowScrollTop = document.body.scrollTop || document.documentElement.scrollTop;
+	let windowHeight = document.body.scrollHeight - document.documentElement.clientHeight;
+	let percent = windowScrollTop / windowHeight * 100;
+	progress.style.width = percent + "%";
 }
 /* ===================================  Progress Bar  --End--  =================================== */
-$(document).ready(function() {$('.form__search_input').hideseek({highlight: true});});
-let formButtonBack 	= document.querySelector(".form__search_back");
+$(document).ready(function () { $('.form__search_input').hideseek({ highlight: true }); });
+let formButtonBack = document.querySelector(".form__search_back");
 formButtonBack.addEventListener("click", function () {
 	let formSearch = document.querySelector(".form__search_input"),
 		pageBodyP = document.querySelectorAll(".page__body_p");
