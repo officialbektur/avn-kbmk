@@ -17,4 +17,3 @@ mysqli_query($connect, "UPDATE `passwords` SET `password` = '$password' WHERE `p
 
 /* Переадресация на главную страницу */
 exit("<meta http-equiv='refresh' content='0; url=/avnanswers/adminpassword/update/'>");
-?>

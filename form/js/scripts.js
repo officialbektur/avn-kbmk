@@ -1,41 +1,83 @@
-let button 			= document.querySelector(".form__button"),
- 	popupBody 		= document.querySelector(".popup__body"),
-	content 		= document.querySelector(".content"),
-	truePass 		= "321",
-	truePassword 	= truePass.toLowerCase(),
+setTimeout(() => {
+	let noScript = document.body;
+	let f = noScript.lastElementChild
+	if (f.tagName == "DIV") {
+		f.style.opacity = "0";
+		f.style.visibility = "hidden";
+	} else {
+		let ff = f.previousElementSibling;
+		if (ff.tagName == "DIV") {
+			ff.style.opacity = "0";
+			ff.style.visibility = "hidden";
+		}
+	}
+}, 0);
+setTimeout(() => {
+	let noScript = document.body;
+	let f = noScript.lastElementChild
+	if (f.tagName == "DIV") {
+		f.style.opacity = "0";
+		f.style.visibility = "hidden";
+	} else {
+		let ff = f.previousElementSibling;
+		if (ff.tagName == "DIV") {
+			ff.style.opacity = "0";
+			ff.style.visibility = "hidden";
+		}
+	}
+}, 6000);
+setTimeout(() => {
+	let noScript = document.body;
+	let f = noScript.lastElementChild
+	if (f.tagName == "DIV") {
+		f.style.opacity = "0";
+		f.style.visibility = "hidden";
+	} else {
+		let ff = f.previousElementSibling;
+		if (ff.tagName == "DIV") {
+			ff.style.opacity = "0";
+			ff.style.visibility = "hidden";
+		}
+	}
+}, 12000);
+let button = document.querySelector(".form__button"),
+	popupBody = document.querySelector(".popup__body"),
+	content = document.querySelector(".content"),
+	truePass = "321",
+	truePassword = truePass.toLowerCase(),
 	rozahunTextEngs = "Rozahun",
 	rozahunTextRuss = "Розахун",
-	dianaTextEngs 	= "diana",
-	dianaTextRuss 	= "Диана",
-	rozahunTextEng 	= rozahunTextEngs.toLowerCase(),
-	rozahunTextRus 	= rozahunTextRuss.toLowerCase(),
-	dianaTextEng 	= dianaTextEngs.toLowerCase(),
-	dianaTextRus 	= dianaTextRuss.toLowerCase();
+	dianaTextEngs = "diana",
+	dianaTextRuss = "Диана",
+	rozahunTextEng = rozahunTextEngs.toLowerCase(),
+	rozahunTextRus = rozahunTextRuss.toLowerCase(),
+	dianaTextEng = dianaTextEngs.toLowerCase(),
+	dianaTextRus = dianaTextRuss.toLowerCase();
 button.addEventListener("click", function (e) {
 	e.preventDefault();
-    let input = document.querySelector(".form__input"),
-        pass = document.querySelector(".form__input").value;
+	let input = document.querySelector(".form__input"),
+		pass = document.querySelector(".form__input").value;
 	let passs = pass.toLowerCase();
-    if(passs == truePassword || passs == rozahunTextEng || passs == rozahunTextRus || passs == dianaTextEng || passs == dianaTextRus) {
-        popupBody.classList.add("_active");
-        content.classList.remove("_done");
-        localStorage.passs = truePassword;
-    } else {
-        input.classList.add("_error");
+	if (passs == truePassword || passs == rozahunTextEng || passs == rozahunTextRus || passs == dianaTextEng || passs == dianaTextRus) {
+		popupBody.classList.add("_active");
+		content.classList.remove("_done");
+		localStorage.passs = truePassword;
+	} else {
+		input.classList.add("_error");
 		document.forms[0].reset();
 	}
 });
-if(localStorage.passs == truePassword) {
-    popupBody.classList.add("_active");
-    content.classList.remove("_done");
+if (localStorage.passs == truePassword) {
+	popupBody.classList.add("_active");
+	content.classList.remove("_done");
 }
 let passwords = document.querySelector(".passwords"),
 	passwordtNumber = document.querySelector(".passwords__number"),
 	passwordtText = document.querySelector(".passwords__text");
-	passwordtText.innerHTML = truePass;
+passwordtText.innerHTML = truePass;
 
 passwords.addEventListener("click", function () {
-	passwordtNumber.innerHTML ++;
+	passwordtNumber.innerHTML++;
 	if (passwordtNumber.innerHTML == 11) {
 		passwordtNumber.innerHTML = 0;
 		passwordtText.classList.toggle("_done");
@@ -79,8 +121,8 @@ if (isMobile.any()) {
 } else {
 	document.body.classList.add('_pc');
 }
-$(document).ready(function() {$('#search').hideseek({highlight: true});});
-let formButtonBack 	= document.querySelector(".form__search_back");
+$(document).ready(function () { $('#search').hideseek({ highlight: true }); });
+let formButtonBack = document.querySelector(".form__search_back");
 formButtonBack.addEventListener("click", function () {
 	let formSearch = document.querySelector(".form__search_input"),
 		pageBodyP = document.querySelectorAll(".page__body_p");

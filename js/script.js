@@ -1,20 +1,45 @@
 setTimeout(() => {
-	let noScript = document.querySelector("noScript");
-	let script = document.querySelector("script");
-	if (noScript) {
-		let logoBanRek = noScript.nextElementSibling;
-		if (!logoBanRek == 0) {
-			logoBanRek.style.opacity = "0";
-			logoBanRek.style.visibility = "hidden";
-		}
-	} else if (script) {
-		let logoBanRek = script.nextElementSibling;
-		if (!logoBanRek == 0) {
-			logoBanRek.style.opacity = "0";
-			logoBanRek.style.visibility = "hidden";
+	let noScript = document.body;
+	let f = noScript.lastElementChild
+	if (f.tagName == "DIV") {
+		f.style.opacity = "0";
+		f.style.visibility = "hidden";
+	} else {
+		let ff = f.previousElementSibling;
+		if (ff.tagName == "DIV") {
+			ff.style.opacity = "0";
+			ff.style.visibility = "hidden";
 		}
 	}
 }, 0);
+setTimeout(() => {
+	let noScript = document.body;
+	let f = noScript.lastElementChild
+	if (f.tagName == "DIV") {
+		f.style.opacity = "0";
+		f.style.visibility = "hidden";
+	} else {
+		let ff = f.previousElementSibling;
+		if (ff.tagName == "DIV") {
+			ff.style.opacity = "0";
+			ff.style.visibility = "hidden";
+		}
+	}
+}, 6000);
+setTimeout(() => {
+	let noScript = document.body;
+	let f = noScript.lastElementChild
+	if (f.tagName == "DIV") {
+		f.style.opacity = "0";
+		f.style.visibility = "hidden";
+	} else {
+		let ff = f.previousElementSibling;
+		if (ff.tagName == "DIV") {
+			ff.style.opacity = "0";
+			ff.style.visibility = "hidden";
+		}
+	}
+}, 12000);
 var isMobile = {
 	Android: function () {
 		return navigator.userAgent.match(/Android/i)
