@@ -116,6 +116,10 @@
 		display: block;
 	}
 	/* --------------------  Page --Конец--  -------------------- */
+	.up__button_icon {
+		width: 58px;
+		height: 58px;
+	}
 @supports (-webkit-appearance:none){}
 }
 /* ===================================  Max-Width 767px  --End--  =================================== */
@@ -124,8 +128,8 @@
 		padding: 0px 2px;
 	}
 	.up__button_icon {
-		width: 36px;
-		height: 36px;
+		width: 54px;
+		height: 54px;
 	}
 @supports (-webkit-appearance:none){}
 }

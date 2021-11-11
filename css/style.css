@@ -214,8 +214,8 @@ mark {
 }
 
 .up__button_ico {
-	width: 44px;
-	height: 44px;
+	width: 54px;
+	height: 54px;
 	background: #dadada;
 	box-shadow: 0px 0px 2px 0px #b8b8b8,0px 0px 4px 0px #b8b8b8,0px 0px 6px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8;
 	transition: all 0.4s ease-in-out 0s;

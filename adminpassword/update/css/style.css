@@ -543,11 +543,4 @@ body._mobile .menu__list > li {
 @supports (-webkit-appearance:none){}
 }
 /* ===================================  Max-Width 767px  --End--  =================================== */
-@media screen and (max-width: 360px){
-	.up__button_icon {
-		width: 36px;
-		height: 36px;
-	}
-@supports (-webkit-appearance:none){}
-}
 /* ===================================  For Mobile  --End--  =================================== */
