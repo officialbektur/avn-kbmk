@@ -15,9 +15,9 @@ define('DATABASE', 'passwordavnanswers');
 
 
 // define('HOST', 'localhost');
-// define('USER', 'id17644572_avnanswers');
-// define('PASSWORD', 'd#_T5cnAR$@H7VZc');
-// define('DATABASE', 'id17644572_passwords');
+// define('USER', 'ci80697_avn');
+// define('PASSWORD', 'Avnanswersq1q2q3');
+// define('DATABASE', 'ci80697_avn');
 
 
 

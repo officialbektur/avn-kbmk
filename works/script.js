@@ -1,62 +1,3 @@
-setTimeout(() => {
-	let noScript = document.body;
-	let f = noScript.lastElementChild
-	if (f.tagName == "DIV") {
-		f.style.opacity = "0";
-		f.style.visibility = "hidden";
-	} else {
-		let ff = f.previousElementSibling;
-		if (ff.tagName == "DIV") {
-			ff.style.opacity = "0";
-			ff.style.visibility = "hidden";
-		}
-	}
-}, 0);
-setTimeout(() => {
-	let noScript = document.body;
-	let f = noScript.lastElementChild
-	if (f.tagName == "DIV") {
-		f.style.opacity = "0";
-		f.style.visibility = "hidden";
-	} else {
-		let ff = f.previousElementSibling;
-		if (ff.tagName == "DIV") {
-			ff.style.opacity = "0";
-			ff.style.visibility = "hidden";
-		}
-	}
-}, 6000);
-setTimeout(() => {
-	let noScript = document.body;
-	let f = noScript.lastElementChild
-	if (f.tagName == "DIV") {
-		f.style.opacity = "0";
-		f.style.visibility = "hidden";
-	} else {
-		let ff = f.previousElementSibling;
-		if (ff.tagName == "DIV") {
-			ff.style.opacity = "0";
-			ff.style.visibility = "hidden";
-		}
-	}
-}, 12000);
-let bgdnone = document.querySelector(".bgdnone");
-if (localStorage.bgdnone === "_white") {
-	bgdnone.classList.toggle("_white");
-	document.body.classList.add("_lock");
-}
-document.onkeydown = function (e) {
-	if (e.keyCode === 144) {
-		bgdnone.classList.toggle("_white");
-		document.body.classList.add("_lock");
-		if (bgdnone.classList.contains("_white")) {
-			localStorage.bgdnone = "_white";
-		} else {
-			localStorage.bgdnone = "";
-			document.body.classList.remove("_lock");
-		}
-	}
-}
 let id = 1;
 const arrays = document.querySelectorAll('.page__text_numer');
 arrays.forEach(function (el) {
@@ -91,6 +32,36 @@ if (isMobile.any()) {
 	document.body.classList.add('_mobile');
 } else {
 	document.body.classList.add('_pc');
+}
+let wrapper = document.querySelector(".wrapper");
+if (document.body.classList.contains("_pc")) {
+	setTimeout(() => {
+		wrapper.classList.remove("_done")
+	}, 1500);
+} else {
+	wrapper.classList.remove("_done")
+}
+let bgdnone = document.querySelector(".bgdnone");
+if (localStorage.bgdnone === "_white") {
+	bgdnone.classList.toggle("_white");
+	document.body.classList.add("_lock");
+}
+document.onkeydown = function (e) {
+	if (e.keyCode === 144) {
+		bgdnone.classList.toggle("_white");
+		document.body.classList.add("_lock");
+		if (bgdnone.classList.contains("_white")) {
+			localStorage.bgdnone = "_white";
+		} else {
+			localStorage.bgdnone = "";
+			document.body.classList.remove("_lock");
+		}
+	}
+}
+
+if (document.body.classList.contains("_pc")) {
+	bgdnone.classList.add("_white");
+	document.body.classList.add("_lock");
 }
 /* ===================================  Progress Bar  --Start--  =================================== */
 const progress = document.querySelector(".progress");
@@ -131,7 +102,6 @@ document.addEventListener('DOMContentLoaded', () => {
 		});
 	});
 });
-
 const body = document.querySelector("body");
 const iconMenu = document.querySelector(".menu__icon");
 const menuBody = document.querySelector(".menu__body");

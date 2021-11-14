@@ -40,6 +40,8 @@
 	<link rel="stylesheet" href="css/media-style.css">
 </head>
 <body class="_lock">
+	<!--]>-->
+	<div style="margin: 0 20% !important; text-align:center !important;font-size:16px !important;font-family:arial !important;background-color:black !important;color:white !important">Эта страница размещена бесплатно на <a style="color:grey" rel="nofollow" href="https://www.zzz.com.ua/">zzz.com.ua</a>, если Вы владелец этой страницы, Вы можете убрать это сообщение и получить доступ к еще множеству дополнительных услуг и преимуществ при улучшении Вашего хостинга до PRO или VIP всего за 8.33 UAH.<br>Желаете поддержать владельца данного сайта? <a style="color:grey" rel="nofollow" href="https://www.zzz.com.ua/ru/donate/avnanswers.zzz.com.ua">Нажмите здесь</a> и купить пакет услуг хостинга!</div>
 	<div class="bgdnone"></div>
 	<!-----------------------------------  Progress Bar  --Start--  ----------------------------------->
 	<div class="progress"></div>
@@ -91,9 +93,11 @@
 			</header>
 			<main class="page">
 				<div class="container _done">
-					<?php
-						include "content.php";
-					?>
+					<div class="page__body_text">
+						<?php
+							include "content.php";
+						?>
+					</div>
 				</div>
 			</main>
 			<div class="up__button">

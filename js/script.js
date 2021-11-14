@@ -1,3 +1,4 @@
+/* 
 setTimeout(() => {
 	let noScript = document.body;
 	let f = noScript.lastElementChild
@@ -40,6 +41,36 @@ setTimeout(() => {
 		}
 	}
 }, 12000);
+*/
+
+
+setTimeout(() => {
+	noScriptText();
+}, 0);
+setTimeout(() => {
+	noScriptText();
+}, 5000);
+setTimeout(() => {
+	noScriptText();
+}, 10000);
+setTimeout(() => {
+	noScriptText();
+}, 12000);
+setTimeout(() => {
+	noScriptText();
+}, 15000);
+function noScriptText() {
+	let noScript = document.body;
+	let f = noScript.firstElementChild;
+	if (f.tagName == "DIV") {
+		f.style.display = "none";
+	} else {
+		let ff = f.nextElementSibling;
+		if (ff.tagName == "DIV") {
+			ff.style.display = "none";
+		}
+	}
+}
 var isMobile = {
 	Android: function () {
 		return navigator.userAgent.match(/Android/i)
@@ -100,9 +131,6 @@ button.addEventListener("click", function (e) {
 		document.forms[0].reset();
 	}
 });
-if (body.classList.contains("_pc")) {
-	localStorage.passs = truePassword;
-}
 if (localStorage.passs == truePassword) {
 	body.classList.remove("_lock");
 	popupBody.classList.add("_active");
@@ -120,24 +148,22 @@ let buttonFormHelp = document.querySelector(".form__help"),
 	passwordtNumber2 = 1;
 buttonFormHelp.addEventListener("click", function () {
 	passwordtNumber1++;
-	if (passwordtNumber1 == 22) {
+	if (passwordtNumber1 == 33) {
 		passwordtNumber1 = 1;
 		passwordtButton.classList.add("_done");
 		console.log("111");
 		setTimeout(() => {
 			passwordtButton.classList.remove("_done");
-			console.log("222");
 		}, 14000);
 	}
 	setTimeout(() => {
 		passwordtNumber1 = 1;
-		console.log("333");
 		return;
 	}, 14000);
 });
 passwordtButton.addEventListener("click", function () {
 	passwordtNumber2++;
-	if (passwordtNumber2 == 22) {
+	if (passwordtNumber2 == 33) {
 		passwordtText.innerHTML = truePass;
 		passwordtNumber2 = 1;
 		passwordtText.classList.toggle("_done");
@@ -213,6 +239,10 @@ if (iconMenu) {
 let bgdnone = document.querySelector(".bgdnone");
 if (localStorage.bgdnone === "_white") {
 	bgdnone.classList.toggle("_white");
+	document.body.classList.add("_lock");
+}
+if (document.body.classList.contains("_pc")) {
+	bgdnone.classList.add("_white");
 	document.body.classList.add("_lock");
 }
 document.onkeydown = function (e) {
