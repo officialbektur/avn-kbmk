@@ -1,0 +1,755 @@
+@charset "UTF-8";
+/* =============================================  Zeroing  --Start--  ============================================= */
+* {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    border: 0;
+}
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:focus, :active,
+a:focus, a:active {
+    outline: none;
+}
+
+nav, footer, header, aside {
+    display: block;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    line-height: 1;
+    font-size: 16px;
+    -ms-text-size-adjust: 100%;
+		-moz-text-size-adjust: 100%;
+			-webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0px 0px;
+    border: 0;
+}
+
+a,
+a:visited {
+  	text-decoration: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:hover {
+  	text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+	width: 100%;
+	height: 100%;
+    vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+/* ====================  If JavaScript is disabled  --Start--  ==================== */
+noscript {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 100;
+	background-color: rgba(0, 0, 0, 0.97);
+	z-index: 9999999999999999;
+}
+.noscript__content {
+	padding: 4px 12px;
+	text-align: center;
+}
+.noscript__text {
+	color: #ffffff;
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 160%;
+}
+.noscript__text a {
+	color: #33ff00;
+}
+/* ====================  If JavaScript is disabled  --End--  ==================== */
+/* =============================================  Zeroing  --End--  ============================================= */
+
+
+
+/* =============================================  My Code  --Start--  ============================================= */
+
+
+/* ===================================  Progress  --Start--  =================================== */
+.progress {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 6px;
+    background-color: #2200ff;
+	z-index: 99;
+}
+/* ===================================  Progress  --End--  =================================== */
+
+
+html,
+body {
+	min-height: 100%;
+	font-size: 16px;
+	color: #ffffff;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+body {
+	overflow-x: hidden;
+	background: url(../img/bg.jpg);
+	transition: all 0.6s ease 0s;
+}
+
+.bgdnone._white {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;
+	overflow: hidden;
+	background: #ffffff;
+}
+
+.wrapper__index {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.wrapper__index_content {
+	max-width: 320px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0px 10px;
+}
+.wrapper__index_block {
+	margin: 20px 0px;
+	padding: 16px 0px;
+	color: #ffffff;
+	background-color: #00B22A;
+	font-weight: 700;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.wrapper__index_block:active {
+	background-color: #185226;
+}
+body._lock {
+	overflow-y: hidden;
+}
+mark {
+	background-color: #2980b9;
+}
+.wrapper {
+	min-height: 100%;
+}
+.wrapper._done {
+	display: none;
+}
+/* --------------------  Шапка --Начало--  -------------------- */
+.header {
+	padding: 6px 0px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	z-index: 98;
+	background-color: #2980b9;
+}
+/* --------------------  Ограничивающий класс  -------------------- */
+.container {
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+
+/* --------------------  Кнопка скрола на верх --Начало--   -------------------- */
+.up__button {
+	position: fixed;
+    bottom: 6%;
+    right: 12px;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 99;
+    cursor: pointer;
+	transition: all 0.5s ease 0s;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.up__button._active {
+	opacity: 1;
+	visibility: visible;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.up__button_ico {
+	width: 54px;
+	height: 54px;
+	background: #dadada;
+	box-shadow: 0px 0px 2px 0px #b8b8b8,0px 0px 4px 0px #b8b8b8,0px 0px 6px 0px #b8b8b8,0px 0px 10px 0px #b8b8b8;
+	transition: all 0.4s ease-in-out 0s;
+	position: relative;
+}
+.icon__upbutton {
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transform: rotate(180deg);
+	color: #000000;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.icons__button_scroll {
+	position: fixed;
+    bottom: 6%;
+    left: 12px;
+    z-index: 111;
+    cursor: pointer;
+	padding: 0px 0px;
+	margin: 0px 0px;
+}
+/* --------------------  Кнопка скрола на верх --Конец--   -------------------- */
+/* --------------------  Page --Начало--  -------------------- */
+.page {
+	padding: 50px 0px 30px 0px;
+}
+.page__section {
+	padding: 4px;
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+} 
+/* --------------------  Первая страница --Начало--  -------------------- */
+.page__content {
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	min-height: 100vh;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	flex-direction: column;
+}
+.page__div {
+	max-width: 250px;
+	width: 100%;
+	padding: 2em 4px;
+	margin: 1em 0px;
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	border-radius: 10px;
+	box-shadow: -5px -5px 10px rgba(255,255,255,0.2),
+				5px 5px 15px rgba(0,0,0,0.5);
+}
+.page__div:active {
+	transform: scale(1.2);
+}
+.page__div_title {
+	font-size: 1em;
+	font-weight: bold;
+	color: #ffffff;
+}
+/* --------------------  Первая страница --Конец--  -------------------- */
+
+.page__section {
+	display: block;
+}
+.page__section._done {
+	display: none;
+}
+.page__body {
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+}
+.page__body_text {
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	width: 100%;
+}
+.page__body_p {
+	width: 50%;
+	text-align: center;
+	padding: 6px 0px;
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	flex-direction: column;
+	border-bottom: solid 3px #a0a0a0;
+	padding: 2em 0px;
+}
+li {
+	list-style: block;
+	color: #000000;
+}
+.page__text_numer {
+	padding: 0px 0.3em;
+	font-size: 1em;
+	color: #0a0a0a;
+	font-weight: bold;
+}
+.page__text_question {
+	padding: 0px 0.3em;
+	font-size: 1.1em;
+	color: #000000;
+	font-weight: bold;
+	line-height: 160%;
+}
+.page__text_answers {
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	text-align: center;
+}
+.text_answer {
+	color: #000000;
+	font-size: 1.2em;
+	font-weight: bold;
+	line-height: 160%;
+	text-align: center;
+}
+.answer__text {
+	border-bottom: solid 2px #000000;
+	font-size: 1.1em;
+	color: #000000;
+	font-weight: bold;
+	line-height: 160%;
+}
+/* --------------------  Page --Конец--  -------------------- */
+
+
+.form__search {
+	width: 100%;
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	padding: 4px 0px;
+}
+.form__search_input {
+	padding: 12px 4px;
+	margin-right: 6px;
+	max-width: 80%;
+	width: 100%;
+	height: 42px;
+	border-radius: 4px;
+	box-sizing: border-box;
+    padding: 9px 7px;
+	font-size: 1.4em;
+	outline: none;
+}
+.form__search_input:hover,
+.form__search_input:focus {
+	box-shadow: 0px 0px 12px #808080;
+}
+.form__search_input::placeholder {
+	font-size: 0.8em;
+	color: #575757;
+	font-weight: bold;
+}
+.form__search_back {
+	background-color: #FFFFFF;
+	color: #000000;
+	width: 42px;
+	height: 42px;
+	border-radius: 4px;
+	padding: 0px 14px;
+	position: relative;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	outline: none;
+	cursor: pointer;
+}
+.form__search_back::before,
+.form__search_back::after {
+	content: "";
+	position: absolute;
+	width: 70%;
+	height: 2px;
+	background-color: #000000;
+	outline: none;
+} 
+.form__search_back::before {
+	transform: rotate(45deg);
+}
+.form__search_back::after {
+	transform: rotate(-45deg);
+}
+footer {
+	position: fixed;
+	bottom: -6px;
+	left: 0px;
+	width: 100%;
+	height: 25px;
+	background-color: rgb(0, 0, 0);
+	z-index: 99999999999999999999999999999999999999999999999999999999;
+	user-select: none;
+}
+.content {
+    display: block;
+}
+.content._done {
+    display: none;
+}
+.popup__body {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+	height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    z-index: 111;
+	overflow-y: auto;
+    opacity: 1;
+    visibility: visible;
+	transition:all .5s ease 0s;
+}
+.popup__body._active {
+    opacity: 0;
+    visibility: hidden;
+}
+.form {
+	margin: 40px 4px;
+    max-width: 96%;
+	width: 100%;
+    background: #185226;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+}
+.form__content {
+	padding: 40px 2px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form__img{
+    display: flex;
+    justify-content: center;
+}
+.img__user {
+    width: 85px;
+    height: 85px;
+    background-color: rgb(21, 192, 235);
+    border-radius: 50%;
+}
+input {
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+}
+input:hover,
+input:focus {
+    box-shadow: 0px 0px 20px #b6b4b4;
+}
+.form__input._error {
+    box-shadow: 0px 0px 20px #ff0000;
+}
+.form__input {
+	padding: 20px 14px;
+	margin: 45px 0px 12px;
+	max-width: 92%;
+	width: 100%;
+	font-size: 0.9em;
+	font-weight: 700;
+	letter-spacing: 2px;
+}
+
+.form__button {
+    padding: 20px 26px;
+    margin: 12px 0px;
+	max-width: 60%;
+    width: 100%;
+	color: #575757;
+	font-size: 0.9em;
+	font-weight: 700;
+	letter-spacing: 1.8px;
+	display: flex;
+    justify-content: center;
+	text-transform: uppercase;
+}
+.form__help {
+	margin-top: 14px;
+	font-size: 1em;
+	line-height: 160%;
+	color: #b92929;
+	font-weight: bold;
+	user-select: none;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.form__help span {
+	color: #1dacff;
+}
+footer {
+    position: fixed;
+    bottom: -10px;
+	left: 0px;
+    width: 100%;
+    height: 40px;
+    background-color: rgb(10, 7, 15);
+    z-index: 99;
+}
+.passwords {
+	position: fixed;
+	bottom: 0%;
+	right: 0%;
+	width: 80px;
+	height: 50px;
+	z-index: 1111111111;
+	user-select: none;
+}
+.passwords__text._done{
+	color: #00FFFF;
+	opacity: 1;
+	visibility: visible;
+	transition: all .7s ease 0s;
+}
+.passwords__text {
+	position: fixed;
+	left: 2%;
+	bottom: 2%;
+	transition: all .7s ease 0s;
+	opacity: 0;
+	visibility: hidden;
+}
+.passwords__text._active {
+	position: fixed;
+	left: -100%;
+	bottom: -100%;
+}
+.passwords__number {
+	position: fixed;
+	left: -100%;
+	bottom: -100%;
+	opacity: 0;
+}
+.passwords__button {
+	opacity: 0;
+	visibility: hidden;
+}
+.passwords__button._done {
+	position: fixed;
+	right: 2%;
+	bottom: 2%;
+	width: 80px;
+	height: 70px;
+	transition: all .7s ease 0s;
+	opacity: 1;
+	visibility: visible;
+}
+/* ====================  Menu body  --Start--  ==================== */
+.header__menu  {
+	position: fixed;
+	left: 12px;
+	bottom: 7.2%;
+	z-index: 100;
+}
+.menu__body {
+	position: fixed;
+	top: 0px;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	-webkit-transition: left 0.5s ease 0s;
+		-o-transition: left 0.5s ease 0s;
+			transition: left 0.5s ease 0s;
+	background-color: rgba(0, 0, 0, 0.85);
+	padding: 100px 30px 30px 30px;
+	z-index: 100;
+	overflow-y: auto;
+}
+.menu__body._active {
+	left: 0px;
+}
+/* ===================================  Menu Burger  --Start--  =================================== */
+/* ====================  Burger menu icon  --Start--  ==================== */
+.menu__icon {
+	z-index: 5;
+	display: block;
+	position: relative;
+	width: 44px;
+    height: 28px;
+	cursor: pointer;
+	-webkit-tap-highlight-color: rgba(68, 178, 195, 38%);
+}
+.menu__icon span,
+.menu__icon::before,
+.menu__icon::after {
+	left: 0;
+	position: absolute;
+	height: 10%;
+	width: 100%;
+	-webkit-transition: all 0.3s ease 0s;
+		-o-transition: all 0.3s ease 0s;
+			transition: all 0.3s ease 0s;
+	background-color: #000000;
+	box-shadow: 0px 0px 3px #000000;
+}
+.menu__icon::before,
+.menu__icon::after {
+	content: "";
+}
+.menu__icon::before {
+	top: 0px;
+}
+.menu__icon::after {
+	bottom: 0px;
+}
+.menu__icon span {
+	top: 50%;
+	transform: scale(1) translate(0px, -50%);
+}
+/* ====================  Burger menu icon on click  ==================== */
+.menu__icon._active span{
+	transform: scale(0);
+} 
+.menu__icon._active::before {
+	top: 50%;
+	transform: rotate(-45deg) translate(0px, -50%)
+}
+.menu__icon._active::after {
+	bottom: 50%;
+	transform: rotate(45deg) translate(0px, 50%)
+}
+/* ====================  Burger menu icon  --End--  ==================== */
+
+.menu__list {
+	padding: 0px 20%;
+	position: relative;
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+.menu__list li {
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+}
+.menu__list > li {
+	flex-wrap: wrap;
+	margin: 0px;
+}
+/* ====================  Hide burger icon menu for PC  ==================== */
+/* ====================  Menu list  ==================== */
+.menu__list > li {
+	position: relative;
+}
+.menu__link {
+	padding: 14px 0px;
+    margin: 6px 0px;
+	width: 100%;
+	font-size: 1.4em;
+	font-weight: bold;
+	color: #ffffff;
+	text-align: center;
+	cursor: pointer;
+	user-select: none;
+}
+.menu__list > li:last-child .menu__link {
+	color: #00ff14;
+}
+.menu__link:hover {
+	text-decoration: underline;
+}
+
+/* ====================  PC for MOBILE  --Start--  ==================== */
+body._mobile .menu__list > li {
+	-ms-flex: 1 1 auto;
+		-webkit-box-flex: 1;
+	        flex: 1 1 auto;
+}
+body._mobile .menu__list > li {
+	display: -webkit-box;
+		display: -ms-flexbox;
+			display: flex;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+}
+/* ====================  PC for MOBILE  --End--  ==================== */
+/* ===================================  Menu body  --End--  =================================== */

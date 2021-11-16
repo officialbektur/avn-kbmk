@@ -1,0 +1,136 @@
+/* --------------------  Для ПК --Начало--  -------------------- */
+@media (min-width: 767px){
+	.form__search_input {
+		max-width: 34%;
+		width: 100%;
+		padding: 0px 14px;
+	}
+	.header__title_text {
+		position: absolute;
+		right: 5%;
+		top: 12px;
+		max-width: 45px;
+		width: 100%;
+		height: 26px;
+		border: solid 1px #006eff;
+		background-color: #ffffff;
+		border-radius: 12px;
+		-webkit-transition: all .3s ease 0s;
+			-o-transition: all .3s ease 0s;
+				transition: all .3s ease 0s;
+		-webkit-tap-highlight-color: transparent;
+		user-select: none;
+		cursor: pointer;
+		opacity: 0;
+	}
+	.header__title_text._active{
+		background-color: #006eff;
+	}
+	.header__title_text span {
+		position: absolute;
+		top: 8.7%;
+		left: 2px;
+		width: 20px;
+		height: 20px;
+		border-radius: 12px;
+		background-color: #006eff;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-transition: all .3s ease 0s;
+			-o-transition: all .3s ease 0s;
+				transition: all .3s ease 0s;
+	}
+	.header__title_text span._active {
+		position: absolute;
+		left: 50%;
+		background-color: #ffffff;
+	}
+	.form {
+        max-width: 550px;
+        width: 100%;
+    }
+    .img__user {
+        width: 120px;
+        height: 120px;
+    }
+	.form__input {
+		padding: 18px 14px;
+		margin: 45px 2px 15px;
+		max-width: 85%;
+		font-size: 1em;
+		letter-spacing: 2px;
+	}
+	.form__button {
+		padding: 18px 26px;
+		margin: 15px 2px;
+		max-width: 40%;
+		width: 100%;
+		color: #575757;
+		font-size: 0.9em;
+		font-weight: 700;
+		letter-spacing: 1.8px;
+		display: flex;
+		justify-content: center;
+	
+	}
+@supports (-webkit-appearance:none){}
+}
+/* --------------------  Для ПК --Конец--  -------------------- */
+
+
+
+
+/* --------------------  Для Моб.Тел. --Начало--  -------------------- */
+@media (max-width: 767px){
+	/* ====================  NoScrript  --Start--  ==================== */
+	.noscript__text {
+		font-size: calc(10px + (13 - 10) * ((100vw - 320px) / (767 - 320)));
+	}
+	/* ====================  NoScrript  --Start--  ==================== */
+	.form__search_input {
+		height: 48px;
+	}
+	.form__search_back {
+		width: 48px;
+		height: 48px;
+	}
+	/* --------------------  Page --Начало--  -------------------- */
+	.page {
+		padding: 56px 0px 30px 0px;
+	}
+	.page__section {
+		padding: 8px;
+	} 
+	.page__body {
+		text-align: center;
+	}
+	.page__body_text {
+		flex-direction: column;
+	}
+	.page__body_p {
+		width: 100%;
+	}
+	.header__title_text {
+		display: none;
+	}
+	.page__section._done {
+		display: block;
+	}
+	/* --------------------  Page --Конец--  -------------------- */
+	.up__button_icon {
+		width: 58px;
+		height: 58px;
+	}
+@supports (-webkit-appearance:none){}
+}
+/* ===================================  Max-Width 767px  --End--  =================================== */
+@media screen and (max-width: 360px){
+	.menu__list {
+		padding: 0px 2px;
+	}
+	.up__button_icon {
+		width: 54px;
+		height: 54px;
+	}
+@supports (-webkit-appearance:none){}
+}
+/* ===================================  For Mobile  --End--  =================================== */
