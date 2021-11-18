@@ -1,720 +1,722 @@
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">1)</span> 
-		Заполнение паспортной части истории болезни производит:
+		Назовите процесс информирования и обучения пациента для повышения его приверженности к ведению здорового образа жизни 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		B.Медсестра приемного отделения;      (+)
+		Консультированием;+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">2)</span> 
-		Сбор информации у пациента о лекарственной непереносимости проводится с целью профилактики
+		К видам паллиативной помощи относится
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Аллергической реакции;      (+)
+		Консультативная помощь;+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">3)</span> 
-		К субъективному методу исследования относятся :
+		Перед введением мочевого катетера в мочевой пузырь необходимо
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Сбор анамнеза;+
+		Подмыть пациента+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">4)</span> 
-		Субъективные исследования включают всё,кроме :
+		При выявлении ВИЧ у пациента необходимо
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Осмотр; +
+		Сохранить врачебную тайну+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">5)</span> 
-		К патологическому типу грудной клетки относится:
+		Подсчет артериального пульса и определение его свойств лучше проводить
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Эмфизематозная; +
+		На лучевой артерии+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">6)</span> 
-		Для выявления патологических изменений в легочной ткани применяют:
+		В норме у взрослого человека пульс составляет _____ударов в минуту
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-			Топографическую перкуссию;+
+		60 – 80+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">7)</span> 
-		При аускультации легких у здорового человека выслушивается :
+		Учащение пульса более 85 – 90 ударов в минуту называется
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Везикулярное дыхание;+
+		Тахикардией+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">8)</span> 
-		Пониженное содержание кислорода в крови называется:
+		Артериальным давлением называется
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Гипоксия 
+		Давление, которое текущая в кровеносных сосудах кровь оказывает на стенку кровеносного сосуда.+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">9)</span> 
-		Плевральную пункцию с диагностической целью проводят при:
+		Стойкое повышение артериального давления выше 140/ 90 мм рт. ст. называется
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Экссудативном плеврите ;+
+		Артериальной гипертензией+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">10)</span> 
-		К инструментальному исследованию относится :
+		Артериальное давление ниже 90/60 мм рт. ст. называется
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Флюорография 
+		Артериальной гипотензией или гипотонией+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">11)</span> 
-		К рентгенологическому исследования относится :
+		Частотой дыхательных движений ЧД называется
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Холецистография 
+		Количество циклов вдох-выдох за 1 минуту+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">12)</span> 
-		Мокрота для бактериологического исследования собирают в :
+		У здорового взрослого человека норма дыхательных движений в покое составляет_____в минуту
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Стерильную банку;+
+		16 – 20+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">13)</span> 
-		В норме перкуторный звук  над легкими :
+		Определите количество дыхательных движений больше 20 в минуту
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Ясный
+		Тахипноэ
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">14)</span> 
-		Высота стояния верхушки легкого над ключицей в норме :
+		Одышкой называется
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		На 3-4см; +
+		Расстройство ритма и глубины дыхания+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">15)</span> 
-		Тимпанический звук получается при перкуссии:
+		Экспираторной одышкой является
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Над  кишечником;+
+		Дыхание с затрудненным выдохом+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">16)</span> 
-		При скоплении экссудата в плевральной полости получается перкуторный звук:
+		Инспираторной одышкой является
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Притупленный
+		Дыхание с затрудненным вдохом+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">17)</span> 
-		При умен6ьшении воздушности легочной ткани получают перкуторный звук :
+		Суточным диурезом называется
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Притупленный 
+		Общее количество мочи, выделенной пациентом в течение суток+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">18)</span> 
-		На общий анализ кровь берут:
+		Укажите основное проявление бронхиальной астмы 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Из четвертого пальца левой руки; +
+		Экспираторная одышка+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">19)</span> 
-		Информация о наследственности относится к :
+		Дренажное положение придается пациенту для
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Истории жизни;+
+		Облегчения отхождения мокроты+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">20)</span> 
-		Осложнение, которое не возникает при проведении внутривенной инъекции:
+		При выделении гнойной мокроты пациента необходимо обеспечить
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Липодистрофия;      (+)
+		Индивидуальной плевательницей+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">21)</span> 
-		Во время первого визита пациента, измерять АД необходимо:
+		Анурией называется
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		1 раз на обеих руках;      (+)
+		Отсутствие мочи+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">22)</span> 
-		Наиболее взаимосвязаны свойства пульса
+		Анализ мочи по Нечипоренко проводится для определения в единице объема
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Напряжение и наполнение;      (+)
+		Лейкоцитов, эритроцитов+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">23)</span> 
-		Основная жалоба больного при бронхообструктивном синдроме:
+		При анализе мочи по Зимницкому определяются
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Отдышка; +
+		Количество, относительная плотность мочи+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">24)</span> 
-		Для сердечных отеков характерно:
+		При онкологических заболеваниях, сопровождающихся сильной нестерпимой болью, применяется
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		На ногах ;+
+		Морфин+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">25)</span> 
-		Выберите возможное место для венепункции при заборе крови из периферических вен на анализ:
+		Этическим долгом медицинских работников в области паллиативной медицины является
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Вены локтевого сгиба;      (+)
+		Удовлетворение его психических, социальных и духовных потребностей+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">26)</span> 
-		В 5 межреберье на 1 ,5 см вправо от левой среднеключичной линии прослушивают работы клапана сердца:
+		Критерием отбора пациентов для оказания паллиативной помощи является
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Митрального;+
+		Очевидность того факта, что последующие попытки лечения нецелесообразны+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">27)</span> 
-		В норме верхушечный толчок сердца пальпируется :
+		Наиболее частой психологической проблемой у пациентов с неизлечимой болезнью считается
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		среднеключичной линии;+
+		Тревога и депрессия+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">28)</span> 
-		При заборе крови из периферической вены на анализ жгут снимают?
+		Целями паллиативной помощи при онкологии являются 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		По окончании процедуры перед извлечением иглы;      (+)
+		Облегчению страданий больному с онкологией +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">29)</span> 
-		К общеклиническому минимуму исследований относится :
+		Борьба с онкологическими заболеваниями предполагает: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Общий анализ крови,мочи , кал на я/ глист;+
+		Профилактику и ранее их выявление. +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">30)</span> 
-		В норме при аускультации сердца выслушивается :
+		Какие службы есть у хосписа? 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Систолический и диастолический тоны;+
+		Выездная(патронаж)служба и стационар +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">31)</span> 
-		Число сердечных сокращений в норме :
+		Когда возбуждение и беспокойное поведение больного сопровождаются стонами и гримасами, это часто истолковывают как свидетельство: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		60-90 в мин +
+		Физической боли  +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">32)</span> 
-		Пальпация границы печени проводится по методу :
+		Основные физические проблемы  инкурабельного больного и членов его семьи: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Образцово – Стражеско; +
+		Боль и другие симптомы, раны, питание +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">33)</span> 
-		Горечь во рту , чувство тяжести в правом подреберье ,характерные симптомы заболеваний:
+		Основополагающим, центральным элементом всей системы поддержки пациента и его семьи является:  
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Печени ;+
+		Духовный аспект+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">34)</span> 
-		Жалобы  при заболеваниях  поджелудочной железы:
+		Синоним слова инкурабельный больной: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Боль опоясывающего характера;+
+		Неизлечимый больной; +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">35)</span> 
-		«Сосудистые звездочки» , «голова медузы» , желтушность кожи характерны для заболеваний:
+		Паллиативная помощь больным должна начинаться с момента: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Печени;+
+		Если  установлен диагноз неизлечимого заболевания +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">36)</span> 
-		Ирригоскопия применяется для исследования:
+		К жизнеподдерживающему лечению относятся: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Толстого кишечника ;+
+		Искусственная вентиляция легких, экстракорпоральный диализ с помощью аппарата «искусственная почка», искусственное питание; +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">37)</span> 
-		Желтушность кожи ,асцит  характерные признаки для заболеваний:
+		Что такое Хоспис
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Печени;+
+		Отделение или учреждение для не излечимых больных+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">38)</span> 
-		Кал на капрологическое исследование отправляют:
+		По какому вопросу не может консультировать медицинская сестра
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		В клиническую лабораторию;+
+		По коррекции доз лекарственных препаратов+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">39)</span> 
-		Для стернальной пункции фельдшер готовит :
+		Что подразумевается под определение Паллиативная помощь? 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Иглу Кассирского ;+
+		Это командный подход, предотвращающий страдания и уменьшающий боль+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">40)</span> 
-		С помощью поверхностной пальпации живота можно оценить :
+		Задачи отделения паллиативной помощи: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Напряжение мышц передней брюшной стенке;+
+		Комплексная поддержка умирающих больных, подбор терапии, решение социальных вопросов и оказание духовной поддержки, проведение консультаций.+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">41)</span> 
-		Метод дополнительного исследования при заболеваниях эндокринной системы :
+		Компоненты паллиативной помощи 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Кровь на сахар; +
+		Медицинская помощь и уход+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">42)</span> 
-		Основной метод диагностики заболеваний  кроветворных органов :
+		Хосписная помощь это: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		ОАК+
+		Одна из форм организации паллиативной медицинской помощи+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">43)</span> 
-		Урография применяется для диагностике заболеваний:
+		Основные группы лекарственных препаратов, используемых для фармакотерапии хронической боли 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Почек ;+
+		Опиоидные анальгетики+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">44)</span> 
-		Если суточный диурез составил у больного 300 мл, то этот симптом называется :
+		Побочным эффектом действия опиоидных анальгетиков являются 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Олигурия ;+
+		Упорные запоры+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">45)</span> 
-		При исследовании органов мочевыделительной  системы, необходимо определить:
+		Категория людей нуждающиеся в паллиативной помощи 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Симптом Пастернацского;+
+		Больные онкологией, которым не помогло основное лечение. +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">46)</span> 
-		Для определения функционального состояния почек проводится анализ мочи:
+		Как обычно больные попадают в хоспис? 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		По методу Зимницкому ;+
+		По направлению лечащего врача онкодиспансера или районного онколога по месту жительства на основании +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">47)</span> 
-		Удельный вес мочи в норме:
+		Этический долг медицинских работников в области паллиативной медицины: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		1015;+
+		Облегчение страданий; +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">48)</span> 
-		Ученый, который разработал распространенный способ измерения давления:                     
+		Целью паллиативной помощи является: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Коротков ;+    
+		Достижение наилучшего качества жизни больных и их семей. +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">49)</span> 
-		Укажите нормальную частоту пульса взрослого пациента за одну минуту             
+		Что является основой успеха паллиативной помощи? 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		60 — 90;+
+		Является длительное профессиональное постоянное наблюдение за больным. +
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">50)</span> 
-		Фельдшер может определить наличие наружных отеков у пациента методом:   
+		Признаком наличия боли может быть:
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Пальпации голеней ;+
+		Напряженный лоб, в частности появление на нем глубоких морщин.+ 
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">51)</span> 
-		Кровь на биохимические анализы берется:
+		Основная помощь больному состоит: 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Утром натощак; +
+		В постоянном общении;+ 
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">52)</span> 
-		Напряжение пульса зависит:
+		Что такое этика
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		От артериального давления;      (+)
+		Нормы нравственного поведения человека+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">53)</span> 
-		Измерение артериального давления проводится:
+		Этические принципы паллиативной помощи
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Сидя и лежа;      (+)
+		Допускать неизбежность смерти+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">54)</span> 
-		Синюшное окрашивание губ и кончиков пальцев это:
+		Какую категорию медицинских работников необходимо обучать паллиативной медицине и паллиативной помощи
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Акроцианоз + 
+		Фельдшеров ФАПов, врачей, медсестер работающих в ЦСМ/ГСВ и специализированных отделениях по оказанию ПП+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">55)</span> 
-		Какое оборудование используют для измерения артериального давления?               
+		Принципы паллиативной помощи, провозглашенные ВОЗ 
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Тонометр ;+
+		Улучшает качество жизни пациента и может также положительно влиять на течение болезни+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">56)</span> 
-		Частота пульса при брадикардии:
+		В доме престарелых у пациента появились сильные боли в области брюшины.
+Окажите неотложную помощь.
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Менее 60 ударов в одну минуту; +
+		Вызвать хирурга+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">57)</span> 
-		В кабинете дежурной медсестры производится:
+		В хосписе находится пациент долгое время, лежит в пастели, на области копчика появились покраснения, стойкая гиперемия, отслойка эпидермиса.
+Определить стадии пролежней.
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		Регистрация поступающих больных;+
+		II+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">58)</span> 
-		Субферильной лихорадкой называют повышение температуры:
+		При посещении м/с на дому у пациента были приступы удушья, так как у него бронхиальная астма. Окажите неотложную помощь.
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		до 38 °С;+
+		Дать ингалятор+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">59)</span> 
-		Каким раствором спирта обрабатывают место иньекции ? 
+		В хосписе у пациента поднялась температура 38,5˚. Определить степень подъема температуры.
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		70%; +
+		Субфебрильная+
 		</span>
 	</p>
 </div>
 <div class="page__body_p">
 	<p class="page__text_question">
 		<span class="page__text_numer">60)</span> 
-		Температура  у пациента не измеряется:
+		В отделении у пациента появился приступообразный кашель. Окажите неотложную помощь.
 	</p>
 	<div class="text_answer">Ответ:</div>
 	<p class="page__text_answers">
 		<span class="answer__text">
-		На локтевом сгибе.+
+		Дать выпить теплую воду+
 		</span>
 	</p>
 </div>
