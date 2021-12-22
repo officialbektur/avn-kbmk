@@ -1,0 +1,70 @@
+.popup__help_password {
+	left: 120%;
+	opacity: 0;
+	visibility: hidden;
+	background-color: rgba(1, 1, 1, 0.92);
+	-webkit-tap-highlight-color: $clickByTouchColor0;
+	transition: all 0.6s ease 0s;
+	&._active {
+		left: 0%;
+		opacity: 1;
+		visibility: visible;
+	}
+	.form__password {
+		margin: 22px 6px;
+		max-width: 100%;
+		background: transparent;
+		max-width: 480px;
+		width: 100%;
+		position: relative;
+		min-height: auto;
+		border-radius: 4px;
+		background: $colorGreen2;
+	}
+	.back__icon {
+		position: absolute;
+		top: 12px;
+		right: 12px;
+		width: 25px;
+		height: 25px;
+		-webkit-tap-highlight-color: $clickByTouchColor0;
+		cursor: pointer;
+		z-index: 9999999999999999;
+		&_icons::before,
+		&_icons::after {
+			content: "";
+			position: absolute;
+			left: 0;
+			height: 3px;
+			width: 100%;
+			transition: all .5s ease 0s;
+			background-color: #ffffff;
+			z-index: 12222222222222222222222222222222222222;
+		}
+		&_icons::before {
+			top: 50%;
+			transform: rotate(-45deg) translate(0px, -75%);
+		}
+		&_icons::after {
+			bottom: 50%;
+			transform: rotate(45deg) translate(0px, 75%);
+		}
+	}
+	.form__password_title {
+		font-size: 20px;
+		font-weight: 700;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+}
+#popup_1 {
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+	&._active {
+		opacity: 0;
+		visibility: hidden;
+	}
+}

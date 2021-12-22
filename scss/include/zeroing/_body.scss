@@ -1,0 +1,11 @@
+body {
+	background: url(../img/bg.jpg);
+	overflow-x: hidden;
+	overflow-y: auto;
+	&._lock {
+		overflow-y: hidden;
+	}
+	&._minWindowScreen250 {
+		overflow: auto;
+	}
+}

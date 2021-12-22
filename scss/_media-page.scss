@@ -1,0 +1,75 @@
+/* ===================================  Page  --Start--  =================================== */
+.form__password {
+	&_img {
+		width: calc(85px + (100 - 85) * ((100vw - 250px) / (767 - 250)));
+		height: calc(85px + (100 - 85) * ((100vw - 250px) / (767 - 250)));
+	}
+	&_input {
+		padding: calc(12px + (16 - 12) * ((100vw - 250px) / (767 - 250))) 14px;
+		font-size: calc(16px + (18 - 16) * ((100vw - 250px) / (767 - 250)));
+	}
+	&_button {
+		padding: calc(12px + (16 - 12) * ((100vw - 250px) / (767 - 250))) 26px;
+		font-size: calc(12px + (14 - 12) * ((100vw - 250px) / (767 - 250)));
+	}
+}
+.boss {
+	&__column {
+		max-width: 100%;
+	}
+}
+.allpages {
+	&__block {
+		margin: calc(18px + (28 - 18) * ((100vw - 250px) / (767 - 250))) 0px;
+		padding: calc(18px + (26 - 18) * ((100vw - 250px) / (767 - 250))) 18px;
+		&:first-child {
+			.allpages__title {
+				font-size: calc(14px + (18 - 14) * ((100vw - 250px) / (767 - 250)));
+			}
+		}
+	}
+	&__title {
+		font-size: calc(18px + (22 - 18) * ((100vw - 250px) / (767 - 250)));
+	}
+}
+.alert__adminpasswords_button {
+	font-size: calc(12px + (20 - 12) * ((100vw - 250px) / (767 - 250)));
+}
+.form__new {
+	&_title {
+		font-size: calc(20px + (22 - 20) * ((100vw - 250px) / (767 - 250)));
+	}
+	&_label {
+		font-size: calc(14px + (20 - 14) * ((100vw - 250px) / (767 - 250)));
+	}
+	&_input {
+		padding: calc(12px + (16 - 12) * ((100vw - 250px) / (767 - 250))) calc(8px + (14 - 8) * ((100vw - 250px) / (767 - 250)));
+		font-size: calc(12px + (18 - 12) * ((100vw - 250px) / (767 - 250)));
+	}
+	&_button {
+		padding: calc(12px + (24 - 12) * ((100vw - 250px) / (1200 - 250))) calc(90px + (120 - 90) * ((100vw - 250px) / (767 - 250)));
+		font-size: calc(10px + (14 - 10) * ((100vw - 250px) / (767 - 250)));
+	}
+}
+.file {
+	padding-top: 0px;
+	flex-direction: column;
+	justify-content: center;
+	&__label {
+		padding: 14px 4px;
+		display: flex;
+		justify-content: center;
+		text-align: center;
+	}
+	&__prewiew {
+		padding-top: 24px;
+		padding-left: 0px;
+		&_img {
+			max-width: 280px;
+		}
+		&_back {
+			margin-top: 20px;
+		}
+	}
+}
+/* ===================================  Page  --End--  =================================== */

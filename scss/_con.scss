@@ -1,0 +1,15 @@
+.con {
+	position: fixed;
+	top: 70px;
+	left: 0;
+	background-color: $colorGreen2;
+	&__title {
+		padding: 10px 22px;
+		color: $colorWhite;
+		font-size: 18px;
+		font-weight: 700;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
