@@ -20,6 +20,43 @@
 		min-height: auto;
 		border-radius: 4px;
 		background: $colorGreen2;
+		&_title {
+			font-size: 20px;
+			font-weight: 700;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+		}
+		&_content-body {
+			padding: 75px 14px 0px;
+			width: 100%;
+			display: flex;
+		    justify-content: space-around;
+			.d & {
+				flex-wrap: wrap;
+				justify-content: space-around;
+			}
+		}
+		& a.form__password_button {
+			color: $colorWhite;
+			background-color: $colorRed;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+		}
+		&_button {
+			margin: 0px 6px;
+			padding: 14px 18px;
+			font-size: 12px;
+			color: $colorBlack5;
+			display: block;
+			width: 100%;
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
 	}
 	.back__icon {
 		position: absolute;
@@ -50,14 +87,6 @@
 			transform: rotate(45deg) translate(0px, 75%);
 		}
 	}
-	.form__password_title {
-		font-size: 20px;
-		font-weight: 700;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
 }
 #popup_1 {
 	left: 0;
@@ -67,4 +96,36 @@
 		opacity: 0;
 		visibility: hidden;
 	}
+}
+#popup_3.popup__help_password .form__password_content-body {
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+#popup_3 .form__password_content {
+    padding: 46px 0px 0px;
+}
+#popup_3.popup__help_password .form__password_content-body {
+    padding: 36px 14px 6px;
+}
+#popup_3.popup__help_password .form__password_button {
+    margin: 12px 6px;
+	max-width: 43%;
+	width: 100%;
+}
+.popup__help_password#popup_4 {
+    left: 120%;
+	background-color: rgba(0, 0, 0, 0);
+	&._active {
+		left: 0px;
+	}
+}
+#popup_4.popup__form {
+	z-index: 9999999999;
+}
+#popup_12 {
+	z-index: 99000000007;
+}
+#popup_13 {
+	z-index: 99000000008;
 }

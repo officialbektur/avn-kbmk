@@ -1,0 +1,36 @@
+.formpanel {
+	position: fixed;
+    top: 66px;
+    left: 0px;
+    width: 100%;
+	display: flex;
+    justify-content: center;
+    background-color: $colorGreen2;
+	z-index: 5;
+	&__content {
+		padding: 12px 6px;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__column {
+		display: flex;
+		align-items: center;
+		label {
+			padding-left: 6px;
+			user-select: none;
+			cursor: pointer;
+			-webkit-tap-highlight-color: $clickByTouchColor0;
+		}
+	}
+	.form__checkbox_button {
+		padding: 6px 12px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $colorWhite;
+		font-weight: 700;
+		background-color: $colorRed;
+	}
+}

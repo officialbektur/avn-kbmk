@@ -6,8 +6,8 @@
 				<div class="form__password_img">
 					<img src="img/user.png" alt="">
 				</div>
-				<input id="form__input" class="form__password_input" placeholder="Админ Пароль" required/>
-				<input type="submit" class="form__password_button" value="Войти"/>
+				<input id="form__input" class="form__password_input _inputValide" placeholder="Админ Пароль" required/>
+				<button type="submit" class="form__password_button">Войти</button>
 				<a href="adminpasswordrecovery.php" class="form__password_help">
 					Забыли пароль? <span>Востановить пароль</span>
 				</a>

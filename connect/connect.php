@@ -1,22 +1,13 @@
 <?php
-/*
- * Делаем константы для хранения данных о базе данных
- * HOST - адрес для подключения к БД
- * USER - логин для доступа к БД
- * PASSWORD - пароль для доступа к БД
- * DATABASE - название базы данных, к которой мы подключаемся
-*/
 // Подключение к localhost
 
-
-define('HOST', 'localhost');
-define('USER', 'root');
-define('PASSWORD', '');
-define('DATABASE', 'avnanswers');
+ define('HOST', 'localhost');
+ define('USER', 'root');
+ define('PASSWORD', '');
+ define('DATABASE', 'avnanswers');
 
 
 // Подключение к avnanswers.ezyro.com
-
 
 // define('HOST', 'sql103.ezyro.com');
 // define('USER', 'ezyro_30362188');
@@ -30,7 +21,6 @@ define('DATABASE', 'avnanswers');
  * Подключаемся к базе данных с помощью функции mysqli_connect()
 */
 $connect = mysqli_connect(HOST, USER, PASSWORD, DATABASE);
-mysqli_set_charset($connect, "utf8");
 /*
  * Делаем проверку соединения
  * Если есть ошибки, останавливаем код и выводим сообщение с ошибкой
@@ -38,24 +28,16 @@ mysqli_set_charset($connect, "utf8");
 if (!$connect) {
 	die('Ошибка подключения к базе данных! Обновите страницу');
 }
-/*
- * Мой функции
-*/
-/*
- * Получаем все с allpages
-*/
+mysqli_set_charset($connect, "utf8");
 function get_allpages_all() {
 	global $connect;
-	$allpages = $connect->query("SELECT * FROM `allpages`");
+	$allpages = $connect->query("SELECT * FROM `allpages` WHERE `status` != 'delete'");
 	return $allpages;
 }
-/*
- * Получаем ID
-*/
 function get_allpages_contentPassword() {
 	global $connect;
 	$idContent = $_GET['id'];
-	$contentPasswords = $connect->query("SELECT * FROM `allpages` WHERE `id` = '$idContent'");
+	$contentPasswords = $connect->query("SELECT * FROM `allpages` WHERE `id` = '$idContent' AND `status` != 'delete'");
 	foreach ($contentPasswords as $contentPassword) {
 		return $contentPassword["contentPasswords"];
 	}
@@ -110,23 +92,11 @@ function get_allpages_con() {
 }
 function get_all() {
 	global $connect;
+	$allTest = $connect->query("SELECT * FROM `contents` WHERE dateadd <= now() - interval 3 day");
+	return $allTest;
+}
+function get_all_vip() {
+	global $connect;
 	$allTest = $connect->query("SELECT * FROM `contents`");
 	return $allTest;
 }
-/*
- * Получаем ID categories
-*/
-// function get_allpages_by_id($id) {
-// 	global $connect;
-// 	$categories = $connect->query("SELECT * FROM `categories` WHERE `id` = '$id'");
-// 	foreach ($categories as $category) {
-// 		return $category["category_name"];
-// 	}
-// }
-/*
- * Увеличиваем просмотр страниц
-*/
-// function views_update($id) {
-// 	global $connect;
-// 	$connect->query("UPDATE `singles` SET `views` = `views` + 1 WHERE `id` = '$id'");
-// }

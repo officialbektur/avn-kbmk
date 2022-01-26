@@ -179,11 +179,11 @@ body._minWindowScreen250 {
 .menu__icon {
   position: fixed;
   bottom: 4%;
-  left: 12px;
+  right: 12px;
   width: 46px;
   height: 28px;
   background-color: #ffffff;
-  z-index: 9999;
+  z-index: 9999999999;
   cursor: pointer;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   -webkit-transition: background-color 0.3s ease 0s;
@@ -253,15 +253,24 @@ body._minWindowScreen250 {
 .menu__body {
   position: fixed;
   top: 0px;
-  left: -100%;
+  left: 100%;
   width: 100%;
   height: 100%;
-  padding: 100px 30px 30px 30px;
+  padding: 30px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-transition: left 0.5s ease 0s;
   transition: left 0.5s ease 0s;
   background-color: rgba(0, 0, 0, 0.95);
   overflow-y: auto;
-  z-index: 9998;
+  z-index: 999999998;
 }
 
 .menu__body._active {
@@ -272,6 +281,20 @@ body._minWindowScreen250 {
   margin: 0px 20%;
   position: relative;
   z-index: 1200;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.menu__list_body {
+  padding: 14px 0px;
+  position: absolute;
+  min-height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,11 +317,6 @@ body._minWindowScreen250 {
           justify-content: center;
 }
 
-.menu__list li:last-child a {
-  color: #ff0000;
-  text-decoration: line-through;
-}
-
 .menu__list > li {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -307,10 +325,10 @@ body._minWindowScreen250 {
 
 /* ====================  Menu list  ==================== */
 .menu__link {
-  padding: 14px 0px;
+  padding: 14px 8px;
   margin: 6px 0px;
   width: 100%;
-  font-size: 1.6em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #ffffff;
   text-align: center;
@@ -324,10 +342,176 @@ body._minWindowScreen250 {
   -webkit-tap-highlight-color: rgba(41, 128, 185, 0.43);
 }
 
-.menu__link:hover {
+body._pc .menu__link:hover {
   background-color: rgba(41, 128, 185, 0.43);
 }
 
+.popup__form .menu__icon {
+  background-color: transparent;
+}
+
+.popup__form .menu__icon span,
+.popup__form .menu__icon::before,
+.popup__form .menu__icon::after {
+  background-color: #ffffff;
+}
+
+._updatepassword_newcontentpassword .menu__icon,
+._menu__icon_white .menu__icon {
+  background-color: transparent;
+}
+
+._updatepassword_newcontentpassword .menu__icon span,
+._updatepassword_newcontentpassword .menu__icon::before,
+._updatepassword_newcontentpassword .menu__icon::after,
+._menu__icon_white .menu__icon span,
+._menu__icon_white .menu__icon::before,
+._menu__icon_white .menu__icon::after {
+  background-color: #ffffff;
+}
+
+/* ====================  Dropdown List  --Start--  ==================== */
+.menu__list_sublist-title {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+/* ====================  Icon dropdown list  ==================== */
+.menu__arrow {
+  margin: 0px 0px 0px 10px;
+}
+
+.menu__list .menu__list_body > li._active .menu__arrow {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.menu__sub_list {
+  margin: 10px 0px 0px;
+  position: relative;
+  background-color: #ffffff;
+  display: none;
+}
+
+.menu__list .menu__list_body > li._active .menu__sub_list {
+  display: block;
+}
+
+.menu__sub_link {
+  width: 100%;
+  color: #000000;
+  font-size: calc(20px + (22 - 20) * ((100vw - 320px) / (767 - 320)));
+}
+
+/* ====================  Dropdown List  --End--  ==================== */
+/* ===================================  Dropdown List  --Start--  =================================== */
+.menu__list_sublist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__list_sublist._active .menu__arrow {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+
+.menu__list_sublist-title {
+  width: 100%;
+}
+
+body._pc .menu__list_sublist-title:hover {
+  background-color: rgba(41, 128, 185, 0.43);
+}
+
+.menu__list_sublist-title .menu__link {
+  -webkit-transition: none;
+  transition: none;
+}
+
+body._pc .menu__list_sublist-title .menu__link:hover {
+  background-color: transparent;
+}
+
+.menu__list_sublist-title .menu__link {
+  width: auto;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* ====================  Icon dropdown list  ==================== */
+.menu__arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0px 0px 0px 5px;
+  border-left: solid 5px transparent;
+  border-right: solid 5px transparent;
+  border-top: solid 10px #ffffff;
+  -webkit-transition: -webkit-transform 0.6s ease 0s;
+  transition: -webkit-transform 0.6s ease 0s;
+  transition: transform 0.6s ease 0s;
+  transition: transform 0.6s ease 0s, -webkit-transform 0.6s ease 0s;
+}
+
+.menu__sub_list {
+  background-color: #000000;
+  padding: 24px;
+  min-width: 200px;
+  border: solid 1px #303030;
+  text-align: center;
+  z-index: 91;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.menu__sub_list > li {
+  margin: 0px 0px 22px 0px;
+}
+
+.menu__sub_list > li:last-child {
+  margin: 0px 0px;
+}
+
+.menu__list_body .menu__list_sublist:last-child .menu__sub_list li:nth-child(3) a {
+  color: #ff0000;
+  text-decoration: underline;
+}
+
+.menu__list_body .menu__list_sublist:last-child .menu__sub_list li:last-child a {
+  color: #ff0000;
+  text-decoration: line-through;
+}
+
+.menu__sub_link {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffffff;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+body._pc .menu__sub_link:hover {
+  text-decoration: underline;
+}
+
+/* ===================================  Dropdown List  --End--  =================================== */
 /* ====================  Menu body  --End--  ==================== */
 /* ===================================  Menu Burger  --End--  =================================== */
 /* ===================================  Progress Bar  --Start--  =================================== */
@@ -413,6 +597,7 @@ body._minWindowScreen250 {
 
 .allpages._admin .menu {
   position: fixed;
+  z-index: 9990;
 }
 
 .allpages._admin .menu__icon {
@@ -444,6 +629,10 @@ body._minWindowScreen250 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.allpages._admin .allpages__content {
+  margin: 0px 12px;
 }
 
 .allpages .new__block {
@@ -485,6 +674,11 @@ body._minWindowScreen250 {
   padding-top: 6px;
   color: #262626;
   font-size: 16px;
+}
+
+.wrapper._allpages .up__button {
+  right: 12px;
+  left: auto;
 }
 
 .form__new {
@@ -751,7 +945,7 @@ body._minWindowScreen250 {
   height: 100%;
   overflow-y: auto;
   background-color: #000000;
-  z-index: 1400;
+  z-index: 999999998;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -778,16 +972,6 @@ body._minWindowScreen250 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.popup__form .menu__icon {
-  background-color: transparent;
-}
-
-.popup__form .menu__icon span,
-.popup__form .menu__icon::before,
-.popup__form .menu__icon::after {
-  background-color: #ffffff;
 }
 
 .popup__password {
@@ -936,6 +1120,11 @@ body._minWindowScreen250 {
   left: 0px;
   width: 100%;
   background-color: #2980b9;
+  z-index: 5;
+}
+
+body._minWindowScreen250 .header {
+  position: absolute;
 }
 
 .form__search {
@@ -1041,16 +1230,20 @@ mark {
 }
 
 .boss {
-  padding: 70px 0px;
+  padding: 76px 0px;
   width: 100%;
+}
+
+.form__deleteormove_all .boss__content {
+  padding: 22px 0px;
 }
 
 .boss__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
 }
 
 .boss__column {
@@ -1058,9 +1251,13 @@ mark {
   max-width: 50%;
   width: 100%;
   border-bottom: solid 3px #000000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .boss__text {
+  width: 100%;
   color: #000000;
   font-size: 18px;
   font-weight: 700;
@@ -1083,18 +1280,101 @@ mark {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
 .boss__text_setting a {
+  margin: 10px 2px;
   padding: 5px 28px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
   color: #ffffff;
+  font-size: 14px;
+  line-height: 120%;
   background-color: #7e5539;
+}
+
+.boss__text_checkbox {
+  position: relative;
+  padding: 0px 6px 0px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boss__text_checkbox-input {
+  opacity: 0;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  z-index: 4;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+}
+
+.boss__text_checkbox-input:checked + .boss__text_checkbox-button::before {
+  -webkit-box-shadow: 0px 0px 16px #0b76ef;
+          box-shadow: 0px 0px 16px #0b76ef;
+}
+
+.boss__text_checkbox-input:checked + .boss__text_checkbox-button::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.boss__text_checkbox-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  z-index: 2;
+}
+
+.boss__text_checkbox-button::before {
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  content: "";
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  width: 24px;
+  height: 24px;
+  background-color: #000000;
+  border-radius: 4px;
+  -webkit-box-shadow: 0px 0px 16px #000000;
+          box-shadow: 0px 0px 16px #000000;
+}
+
+.boss__text_checkbox-button::after {
+  -webkit-transition: -webkit-transform 0.3s ease 0s;
+  transition: -webkit-transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s;
+  transition: transform 0.3s ease 0s, -webkit-transform 0.3s ease 0s;
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  border-radius: 4px;
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+  -webkit-transform: scale(0);
+          transform: scale(0);
 }
 
 .boss__text_question {
@@ -1113,6 +1393,17 @@ mark {
   padding: 0px 6px;
   border-right: solid 2px #000000;
   border-radius: 12px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.boss__text_answertext {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .boss__text_answer-text {
@@ -1132,6 +1423,97 @@ mark {
 
 .boss__text_answer-img img {
   max-height: 300px;
+}
+
+#formallmoveordelete::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9) url("../img/img/loading.gif") center/50px no-repeat;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+#formallmoveordelete._sending::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.popup__help_password._updatepassword {
+  left: 0%;
+  opacity: 1;
+  visibility: visible;
+  z-index: 0;
+}
+
+.formpanel {
+  position: fixed;
+  top: 66px;
+  left: 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #185226;
+  z-index: 5;
+}
+
+.formpanel__content {
+  padding: 12px 6px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formpanel__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formpanel__column label {
+  padding-left: 6px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.formpanel .form__checkbox_button {
+  padding: 6px 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #ff0000;
 }
 
 .form__file {
@@ -1284,6 +1666,66 @@ mark {
   background: #185226;
 }
 
+.popup__help_password .form__password_title {
+  font-size: 20px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.popup__help_password .form__password_content-body {
+  padding: 75px 14px 0px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.d .popup__help_password .form__password_content-body {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.popup__help_password .form__password a.form__password_button {
+  color: #ffffff;
+  background-color: #ff0000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.popup__help_password .form__password_button {
+  margin: 0px 6px;
+  padding: 14px 18px;
+  font-size: 12px;
+  color: #575757;
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 .popup__help_password .back__icon {
   position: absolute;
   top: 12px;
@@ -1319,22 +1761,6 @@ mark {
           transform: rotate(45deg) translate(0px, 75%);
 }
 
-.popup__help_password .form__password_title {
-  font-size: 20px;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
 #popup_1 {
   left: 0;
   opacity: 1;
@@ -1346,27 +1772,47 @@ mark {
   visibility: hidden;
 }
 
-.con {
-  position: fixed;
-  top: 70px;
-  left: 0;
-  background-color: #185226;
+#popup_3.popup__help_password .form__password_content-body {
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.con__title {
-  padding: 10px 22px;
-  color: #ffffff;
-  font-size: 18px;
-  font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+#popup_3 .form__password_content {
+  padding: 46px 0px 0px;
+}
+
+#popup_3.popup__help_password .form__password_content-body {
+  padding: 36px 14px 6px;
+}
+
+#popup_3.popup__help_password .form__password_button {
+  margin: 12px 6px;
+  max-width: 43%;
+  width: 100%;
+}
+
+.popup__help_password#popup_4 {
+  left: 120%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.popup__help_password#popup_4._active {
+  left: 0px;
+}
+
+#popup_4.popup__form {
+  z-index: 9999999999;
+}
+
+#popup_12 {
+  z-index: 99000000007;
+}
+
+#popup_13 {
+  z-index: 99000000008;
 }
 
 /* =============================================  Page  --End--  ============================================= */
@@ -1374,7 +1820,7 @@ mark {
 .up__button {
   position: fixed;
   bottom: 4%;
-  right: 12px;
+  left: 12px;
   opacity: 0;
   visibility: hidden;
   z-index: 80;

@@ -1,3 +1,32 @@
+/* =============================================  For PC  --Start--  --Start--  ============================================= */
+@media screen and (min-width: 767px) {
+  /* ====================  Dropdown list  --Start--  ==================== */
+  .menu__sub_list {
+    -webkit-transform: translate(0px, 10%);
+            transform: translate(0px, 10%);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .menu__list_sublist._active .menu__sub_list {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate(0px, 0px);
+            transform: translate(0px, 0px);
+    pointer-events: all;
+    cursor: pointer;
+    display: block;
+  }
+  .menu__list_sublist._active .menu__arrow {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+  }
+  /* ====================  Dropdown list  --End--  ==================== */
+}
+
+/* =============================================  For PC  --Start--  --End--  ============================================= */
 /* =============================================  Max Width  --Start--  ============================================= */
 /* ===================================  Max Width  --Start--  =================================== */
 @media screen and (max-width: 1200px) {
@@ -7,6 +36,38 @@
 }
 
 /* ===================================  Max Width  --End--  =================================== */
+/* ===================================  Max Width 1072px  --Start--  =================================== */
+@media screen and (max-width: 1072px) {
+  .formpanel__content {
+    max-width: calc(680px + (730 - 680) * ((100vw - 767px) / (1072 - 767)));
+  }
+  .boss__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .boss__column {
+    max-width: calc(680px + (730 - 680) * ((100vw - 767px) / (1072 - 767)));
+  }
+  .boss__text_setting {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .boss__text_setting a {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 30%;
+            flex: 0 0 30%;
+  }
+}
+
+/* ===================================  Max Width 1072px  --End--  =================================== */
 /* =============================================  Max Width  --End--  ============================================= */
 /* =============================================  For Mobile  --Start--  ============================================= */
 /* ===================================  Max-Width 767px  --Start--  =================================== */
@@ -29,8 +90,17 @@
     padding: calc(12px + (16 - 12) * ((100vw - 250px) / (767 - 250))) 26px;
     font-size: calc(12px + (14 - 12) * ((100vw - 250px) / (767 - 250)));
   }
+  .formpanel__content {
+    max-width: calc(680px + (730 - 680) * ((100vw - 767px) / (1072 - 767)));
+  }
   .boss__column {
-    max-width: 100%;
+    max-width: calc(250px + (730 - 250) * ((100vw - 250px) / (767 - 250)));
+    padding: 30px calc(0px + (10 - 0) * ((100vw - 250px) / (767 - 250)));
+  }
+  .boss__text_setting a {
+    margin: calc(3px + (10 - 3) * ((100vw - 250px) / (767 - 250))) 2px;
+    padding: 5px calc(6px + (28 - 6) * ((100vw - 250px) / (767 - 250)));
+    font-size: calc(10px + (16 - 10) * ((100vw - 250px) / (767 - 250)));
   }
   .allpages__block {
     margin: calc(18px + (28 - 18) * ((100vw - 250px) / (767 - 250))) 0px;
@@ -40,7 +110,7 @@
     font-size: calc(14px + (18 - 14) * ((100vw - 250px) / (767 - 250)));
   }
   .allpages__title {
-    font-size: calc(18px + (22 - 18) * ((100vw - 250px) / (767 - 250)));
+    font-size: calc(14px + (18 - 14) * ((100vw - 250px) / (767 - 250)));
   }
   .alert__adminpasswords_button {
     font-size: calc(12px + (20 - 12) * ((100vw - 250px) / (767 - 250)));
@@ -89,6 +159,39 @@
   .file__prewiew_back {
     margin-top: 20px;
   }
+  .popup__help_password .form__password_title {
+    font-size: calc(14px + (20 - 14) * ((100vw - 250px) / (767 - 250)));
+  }
+  .popup__help_password .form__password_content {
+    padding: 42px 8px 22px;
+  }
+  .popup__help_password .form__password_content-body {
+    padding: calc(22px + (60 - 22) * ((100vw - 250px) / (767 - 250))) calc(4px + (14 - 4) * ((100vw - 250px) / (767 - 250))) 0px;
+    width: 100%;
+  }
+  .popup__help_password .form__password_button {
+    margin: 0px calc(4px + (16 - 4) * ((100vw - 250px) / (767 - 250)));
+    font-size: calc(8px + (12 - 8) * ((100vw - 250px) / (767 - 250)));
+  }
+  #popup_3.popup__help_password .form__password_content-body {
+    padding: 36px calc(2px + (14 - 2) * ((100vw - 250px) / (767 - 250))) 6px;
+  }
+  #popup_3.popup__help_password .form__password_button {
+    margin: calc(4px + (12 - 4) * ((100vw - 250px) / (767 - 250))) 6px;
+  }
+  #popup_8.popup__help_password .form__password_content {
+    padding: 42px 4px 8px;
+  }
+  #popup_8 .form__password_content-body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #popup_8.popup__help_password .form__password_button {
+    padding: 12px 8px;
+    margin: calc(4px + (5 - 4) * ((100vw - 250px) / (360 - 250))) calc(4px + (12 - 4) * ((100vw - 250px) / (767 - 250)));
+    max-width: 44%;
+    width: 100%;
+  }
   /* ===================================  Page  --End--  =================================== */
   /* ===================================  Scroll Up Button  --Start--  =================================== */
   .up__button_icon {
@@ -99,17 +202,41 @@
 }
 
 /* ===================================  Max-Width 767px  --End--  =================================== */
-/* ===================================  Max-Width 360px  --Start--  =================================== */
-@media screen and (max-width: 360px) {
+/* ===================================  Max-Width 420px  --Start--  =================================== */
+@media screen and (max-width: 420px) {
   .menu__list {
     margin: 0px 2px;
   }
+}
+
+/* ===================================  Max-Width 420px  --Start--  =================================== */
+/* ===================================  Max-Width 360px  --Start--  =================================== */
+@media screen and (max-width: 360px) {
   .up__button_icon {
     width: 54px;
     height: 54px;
   }
   .form__new_button {
     max-width: 80%;
+  }
+  .popup__help_password .form__password_content {
+    padding: 42px 4px 8px;
+  }
+  .form__password_content-body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .popup__help_password .form__password_button {
+    padding: 12px 8px;
+    margin: calc(4px + (8 - 4) * ((100vw - 250px) / (360 - 250))) calc(4px + (16 - 4) * ((100vw - 250px) / (767 - 250)));
+    max-width: 45%;
+    width: 100%;
+  }
+  .formpanel .form__checkbox_button {
+    font-size: calc(10px + (14 - 10) * ((100vw - 250px) / (360 - 250)));
+  }
+  .formpanel__column label {
+    font-size: calc(12px + (18 - 12) * ((100vw - 250px) / (360 - 250)));
   }
 }
 

@@ -13,9 +13,18 @@
 		font-size: calc(12px + (14 - 12) * ((100vw - 250px) / (767 - 250)));
 	}
 }
+.formpanel__content {
+	max-width: calc(680px + (730 - 680) * ((100vw - 767px) / (1072 - 767)));
+}
 .boss {
 	&__column {
-		max-width: 100%;
+		max-width: calc(250px + (730 - 250) * ((100vw - 250px) / (767 - 250)));
+		padding: 30px calc(0px + (10 - 0) * ((100vw - 250px) / (767 - 250)));
+	}
+	&__text_setting a {
+		margin: calc(3px + (10 - 3) * ((100vw - 250px) / (767 - 250))) 2px;
+		padding: 5px calc(6px + (28 - 6) * ((100vw - 250px) / (767 - 250)));
+		font-size: calc(10px + (16 - 10) * ((100vw - 250px) / (767 - 250)));
 	}
 }
 .allpages {
@@ -29,7 +38,7 @@
 		}
 	}
 	&__title {
-		font-size: calc(18px + (22 - 18) * ((100vw - 250px) / (767 - 250)));
+		font-size: calc(14px + (18 - 14) * ((100vw - 250px) / (767 - 250)));
 	}
 }
 .alert__adminpasswords_button {
@@ -70,6 +79,47 @@
 		&_back {
 			margin-top: 20px;
 		}
+	}
+}
+.popup__help_password {
+	.form__password {
+		&_title {
+			font-size: calc(14px + (20 - 14) * ((100vw - 250px) / (767 - 250)));
+		}
+		&_content {
+			padding: 42px 8px 22px;
+			&-body {
+				padding: calc(22px + (60 - 22) * ((100vw - 250px) / (767 - 250))) calc(4px + (14 - 4) * ((100vw - 250px) / (767 - 250))) 0px;
+				width: 100%;
+			}
+		}
+		&_button {
+			margin: 0px calc(4px + (16 - 4) * ((100vw - 250px) / (767 - 250)));
+			font-size: calc(8px + (12 - 8) * ((100vw - 250px) / (767 - 250)));
+		}
+	}
+}
+#popup_3.popup__help_password .form__password_content-body {
+    padding: 36px calc(2px + (14 - 2) * ((100vw - 250px) / (767 - 250))) 6px;
+}
+#popup_3.popup__help_password .form__password_button {
+    margin: calc(4px + (12 - 4) * ((100vw - 250px) / (767 - 250))) 6px;
+}
+.form__password {
+	&_content {
+		#popup_8.popup__help_password & {
+			padding: 42px 4px 8px;
+		}
+		
+	}
+	#popup_8 &_content-body {
+		flex-wrap: wrap;
+	}
+	#popup_8.popup__help_password &_button {
+		padding: 12px 8px;
+		margin: calc(4px + (5 - 4) * ((100vw - 250px) / (360 - 250))) calc(4px + (12 - 4) * ((100vw - 250px) / (767 - 250)));
+		max-width: 44%;
+		width: 100%;
 	}
 }
 /* ===================================  Page  --End--  =================================== */

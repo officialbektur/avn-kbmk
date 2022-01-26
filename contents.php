@@ -7,7 +7,7 @@
 		<div class="boss__text_question">
 			<span class="boss__text_numer"></span> 
 			<span class="boss__text_question-text">
-				<?php echo $idContents["question-text"] ?>
+				<?php echo $idContents["question-text"]; ?>
 			</span>
 		</div>
 		<div class="boss__text_question-img">

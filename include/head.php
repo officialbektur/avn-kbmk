@@ -6,6 +6,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<!--------------------  Meta Viewport Adaptation for a mobile device  -------------------->
 	<meta name="viewport" id="metaViewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Expires" content="0" />
 	<!--------------------  Top Panel Color --Start--  -------------------->
 	<!-------------------- Chrome, Firefox OS and Opera -------------------->
 	<meta name="theme-color" content="#131419" />
@@ -32,8 +35,8 @@
 	<!--------------------  Fancybox -------------------->
 	<link rel="stylesheet" href="library/fancybox/jquery.fancybox.min.css"/>
 	<!--------------------  CSS  -------------------->
-	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="css/media-style.css" />
+	<link type="text/css" href="css/style.css?<?php echo md5(time());?>" rel="stylesheet"/>
+	<link type="text/css" href="css/media-style.css?<?php echo md5(time());?>" rel="stylesheet"/>
 	<!--------------------  Additional connection  --End--  -------------------->
 </head>
 <body class="_lock">

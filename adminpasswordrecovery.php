@@ -12,7 +12,7 @@
 					</span>
 				</div>
 				<input id="recoveryQuestions" class="form__password_input _req" placeholder="Ответ"/>
-				<input id="recoveryQuestionsButton" type="submit" class="form__password_button" value="Войти"/>
+				<button type="submit" id="recoveryQuestionsButton" class="form__password_button">Отправить</button>
 			</div>
 		</form>
 		<div class="passwords__text" data-recovery="<?php echo get_allpages_answersToQuestions(); ?>"></div>
@@ -32,7 +32,7 @@
 				</div>
 				<input type="hidden" name="id" value="<?php echo $_GET["id"]?>">
 				<input id="recoveryQuestions" name="adminPasswords" class="form__password_input _req" placeholder="Новый пароль"/>
-				<input id="recoveryQuestionsButton" type="submit" class="form__password_button" value="Войти"/>
+				<input id="recoveryQuestionsButton" type="submit" class="form__password_button" value="Изменить"/>
 			</div>
 		</form>
 		<div class="alert__messege">
@@ -42,6 +42,9 @@
 			Нажмите по экрану, чтобы закрыть.
 		</div>
 	</div>
+</div>
+<div class="_menu__icon_white _updatepassword_newcontentpassword">
+	<?php include "include/menu.php"; ?>
 </div>
 <!-----------------------------------  Popup Help Password  --End--  ----------------------------------->
 <?php include "include/script.php"; ?>

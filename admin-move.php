@@ -9,7 +9,7 @@
 			<form action="vendor/checkbox_deleteormove_all.php" method="POST" class="form__deleteormove_all">
 				<div class="formpanel">
 					<div class="formpanel__content">
-						<a href="#popup_8" class="popup-link" class="formpanel__column">
+						<a href="#popup_11" class="popup-link" class="formpanel__column">
 							<button type="submit" class="form__checkbox_button form__checkbox_button-delte">Удалить/Востановить</button>
 						</a>
 						<div class="formpanel__column">
@@ -22,14 +22,14 @@
 				<div class="container">
 					<div class="boss__content _search-location">
 					<?php
-						$idContent = get_allpages_con();
+						$idContent = get_allpages_allcontent();
 						foreach ($idContent as $idContents):
 					?>
 					<div class="boss__column">
 						<div class="boss__text">
 							<div class="boss__text_setting">
-								<a href="#popup_3" class="popup-link" data-deletepermanentlyormove="<?php echo $idContents["id"]?>">Удалить на навсегда или Переместить</a>
-								<a href="vendor/consrecovery.php?id=<?php echo $idContents["id"]?>">Востановить</a>
+								<a href="#popup_10" class="popup-link" data-movedelete="<?php echo $idContents["id"]?>">Удалить</a>
+								<a href="vendor/moverecovery.php?id=<?php echo $idContents["id"]?>">Востановить</a>
 								<div class="boss__text_checkbox">
 									<input id="formAgreement" type="checkbox" name="update[]" class="boss__text_checkbox-input" value="<?php echo $idContents['id'];?>">
 									<div class="boss__text_checkbox-button"></div>
@@ -56,8 +56,7 @@
 					<?php endforeach; ?>
 					</div>
 				</div>
-				<?php include "include/admin-alert-alldeleteormove.php"; ?>
-				<?php include "include/admin-alert-alldeletepermanently.php"; ?>
+				<?php include "include/admin-alert-move-alldeleteorrecovery.php"; ?>
 				<div class="alert__messege">
 					<div class="alert__messege_text">
 						Messege
@@ -68,8 +67,7 @@
 		</main>
 	</section>
 	<!-----------------------------------  Content  --End--  ----------------------------------->
-	<?php include "include/admin-alert-deletepermanently.php"; ?>
-	<?php include "include/admin-alert-alldeletepermanently.php"; ?>
+	<?php include "include/admin-alert-move-deleteorrecovery.php"; ?>
 	<?php include "include/menu.php"; ?>
 	<?php include "include/upbutton.php"; ?>
 </div>

@@ -1,16 +1,16 @@
 <?php include "include/head.php"; ?>
 <div class="wrapper _done">
 	<?php include "include/popupformpassword.php"; ?>
+	<?php include "include/menu.php"; ?>
 	<!-----------------------------------  Content  --Start--  ----------------------------------->
 	<section class="content _content _done">
 		<?php include "include/progressbar.php"; ?>
 		<?php include "include/formsearch.php"; ?>
-		<?php include "include/menu.php"; ?>
 		<main class="boss">
 			<div class="container">
 				<div class="boss__content _search-location" id="galery">
 				<?php
-					$idContent = get_allpages_content();
+					$idContent = get_allpages_allcontent();
 					foreach ($idContent as $idContents):
 				?>
 				<div class="boss__column">

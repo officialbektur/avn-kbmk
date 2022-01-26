@@ -5,3 +5,24 @@
 	}
 }
 /* ===================================  Max Width  --End--  =================================== */
+/* ===================================  Max Width 1072px  --Start--  =================================== */
+@media screen and (max-width: 1072px) {
+	.formpanel__content {
+		max-width: calc(680px + (730 - 680) * ((100vw - 767px) / (1072 - 767)));
+	}
+	.boss__content {
+		flex-direction: column-reverse;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+	.boss__column {
+		max-width: calc(680px + (730 - 680) * ((100vw - 767px) / (1072 - 767)));
+	}
+	.boss__text_setting {
+		justify-content: space-between;
+	}
+	.boss__text_setting a {
+		flex: 0 0 30%;
+	}
+}
+/* ===================================  Max Width 1072px  --End--  =================================== */

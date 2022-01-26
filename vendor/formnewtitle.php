@@ -2,10 +2,10 @@
 // Обновление информации о продукте
 require_once '../connect/connect.php';
 $id = $_POST["id"];
-$recoveryQuestions = $_POST['recoveryQuestions'];
-$alertRecoveryQuestions = mysqli_query($connect, "UPDATE `allpages` SET `contentPasswords` = '$recoveryQuestions' WHERE `allpages`.`id` = $id");
+$newTitle = $_POST['newTitle'];
+$alertnNewTitle = mysqli_query($connect, "UPDATE `allpages` SET `titles` = '$newTitle' WHERE `allpages`.`id` = $id");
 // Отправляем
-if ($alertRecoveryQuestions == true) {
+if ($alertnNewTitle == true) {
 	$message = 'Данные изменены!';
 } else {
 	$message = 'Ошибка';

@@ -3,11 +3,11 @@
 .menu__icon {
 	position: fixed;
 	bottom: 4%;
-	left: 12px;
+	right: 12px;
 	width: 46px;
 	height: 28px;
 	background-color: $colorWhite;
-	z-index: 9999;
+	z-index: 9999999999;
 	cursor: pointer;
 	-webkit-tap-highlight-color: $clickByTouchColor0;
 	transition: background-color 0.3s ease 0s;
@@ -61,14 +61,17 @@
 .menu__body {
 	position: fixed;
 	top: 0px;
-	left: -100%;
+	left: 100%;
 	width: 100%;
 	height: 100%;
-	padding: 100px 30px 30px 30px;
+	padding: 30px 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	transition: left 0.5s ease 0s;
 	background-color: rgba(0, 0, 0, 0.95);
 	overflow-y: auto;
-	z-index: 9998;
+	z-index: 999999998;
 	&._active {
 		left: 0px;
 	}
@@ -78,16 +81,21 @@
 	position: relative;
 	z-index: 1200;
 	display: flex;
-	flex-direction: column;
 	justify-content: center;
+	width: 100%;
+	height: 100%;
+	&_body {
+		padding: 14px 0px;
+		position: absolute;
+		min-height: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
 	li {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		&:last-child a {
-			color: $colorRed;
-			text-decoration: line-through;
-		}
 	}
 	& > li {
 		flex-wrap: wrap;
@@ -96,10 +104,10 @@
 }
 /* ====================  Menu list  ==================== */
 .menu__link {
-	padding: 14px 0px;
+	padding: 14px 8px;
     margin: 6px 0px;
 	width: 100%;
-	font-size: 1.6em;
+	font-size: 1.5em;
 	font-weight: bold;
 	color: $colorWhite;
 	text-align: center;
@@ -107,9 +115,32 @@
 	user-select: none;
 	transition: all 0.6s ease 0s;
 	-webkit-tap-highlight-color: $clickByTouchColor1;
-	&:hover {
+	body._pc &:hover {
 		background-color: $colorDodgerBlue3;
 	}
 }
+.popup__form {
+	& .menu__icon {
+		background-color: transparent;
+	}
+	& .menu__icon span, 
+	& .menu__icon::before, 
+	& .menu__icon::after {
+		background-color: $colorWhite;
+	}
+}
+._updatepassword_newcontentpassword,
+._menu__icon_white {
+	& .menu__icon {
+		background-color: transparent;
+	}
+	& .menu__icon span, 
+	& .menu__icon::before, 
+	& .menu__icon::after {
+		background-color: $colorWhite;
+	}
+}
+@import "dropdownlist/_media-dropdown__list";// ====================  here Media Dropdown List  ==================== //
+@import "dropdownlist/_dropdown__list";// ====================  here Dropdown list  ==================== //
 /* ====================  Menu body  --End--  ==================== */
 /* ===================================  Menu Burger  --End--  =================================== */

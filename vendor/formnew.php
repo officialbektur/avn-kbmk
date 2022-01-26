@@ -5,12 +5,11 @@
 	$adminPasswords = $_POST['adminPasswords'];
 	$recoveryQuestions = $_POST['recoveryQuestions'];
 	$answersToQuestions = $_POST['answersToQuestions'];
-	$alert = mysqli_query($connect,"INSERT INTO `allpages` (`id`, `titles`, `contentPasswords`, `adminPasswords`, `recoveryQuestions`, `answersToQuestions`) VALUES (NULL, '$titles', '$contentPasswords', '$adminPasswords', '$recoveryQuestions', '$answersToQuestions')");
-    //Отправляем
-    if ($alert == false) {
-        $message = 'Ошибка';
+	$alert = mysqli_query($connect,"INSERT INTO `allpages` (`id`, `titles`, `contentPasswords`, `adminPasswords`, `recoveryQuestions`, `answersToQuestions`, `status`) VALUES (NULL, '$titles', '$contentPasswords', '$adminPasswords', '$recoveryQuestions', '$answersToQuestions', '')");
+    if ($alert == true) {
+        $message = 'Данные добавлены!';
     } else {
-        $message = 'Данные отправлены!';
+        $message = 'Ошибка';
     }
 	$response = ['message' => $message];
     header('Content-type: application/json');

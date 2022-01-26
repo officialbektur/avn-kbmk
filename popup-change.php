@@ -3,9 +3,9 @@
 		<!-----------------------------------  Popup Form Password  --Start--  ----------------------------------->
 		<div class="popup__form">
           	<div class="popup__form_body">
-				<form class="form__new popup-change" id="form">
+				<form class="form__new popup-change" id="form" enctype="multipart/form-data">
 					<div class="form__new_content" >
-						<div class="form__new_title">Добавить тест</div>
+						<div class="form__new_title">Изменить тест</div>
 						<?php
 							$contentupdate = get_allpages_update();
 							foreach ($contentupdate as $contentupdates):
@@ -18,7 +18,7 @@
 								<label for="formImageInput1" class="file__label">Добавить изображ.</label>
 								<div class="file">
 									<div class="file__item">
-										<input id="formImageInput1" accept=".jpg, .png, .gif" type="file" name="image1d" class="file__input">
+										<input id="formImageInput1" accept=".jpg, .png, .gif" type="file" name="image1" class="file__input">
 										<div class="file__button">Выбрать</div>
 									</div>
 									<div class="file__prewiew file__prewiew-1">
@@ -26,11 +26,12 @@
 											<?php echo $contentupdates["question-img"]; ?>
 										</div>
 										<div class="file__prewiew_back file__prewiew_back-1">
-											Отмена
+											Удалить
 										</div>
 									</div>
 								</div>
 							</div>
+							<input type="hidden" id="trueClassActiveInClassFilePrewiew1" name="trueClassActiveInClassFilePrewiew1" value="false">
 						</div>
 						<div class="form__new_item">
 							<label for="form__input_name2" class="form__new_label"><span>Ответ:</span></label>
@@ -39,7 +40,7 @@
 								<label for="formImageInput2" class="file__label">Добавить изображ.</label>
 								<div class="file">
 									<div class="file__item">
-										<input id="formImageInput2" accept=".jpg, .png, .gif" type="file" name="image2d" class="file__input">
+										<input id="formImageInput2" accept=".jpg, .png, .gif" type="file" name="image2" class="file__input">
 										<div class="file__button">Выбрать</div>
 									</div>
 									<div class="file__prewiew file__prewiew-2">
@@ -47,15 +48,16 @@
 											<?php echo $contentupdates["answer-img"]; ?>
 										</div>
 										<div class="file__prewiew_back file__prewiew_back-2">
-											Отмена
+											Удалить
 										</div>
 									</div>
 								</div>
 							</div>
+							<input type="hidden" id="trueClassActiveInClassFilePrewiew2" name="trueClassActiveInClassFilePrewiew2" value="false">
 						</div>
 						<?php endforeach; ?>
 						<button type="submit" class="form__new_button">
-							Войти
+							Отправить
 						</button>
 					</div>
 					<div class="alert__messege">

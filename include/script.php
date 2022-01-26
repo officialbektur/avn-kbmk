@@ -5,9 +5,7 @@
 <!--------------------  Fancybox  -------------------->
 <script src="library/fancybox/jquery.fancybox.min.js"></script>
 <!--------------------  My Script  -------------------->
-<script src="js/script.js"></script>
-<script src="js/js.js"></script>
-<script src="js/popup.js"></script>
+<script src="js/script.js?<?php echo md5(time());?>"></script>
 <!--------------------  No Script  -------------------->
 <noscript>
 	<div class="noscript__content">

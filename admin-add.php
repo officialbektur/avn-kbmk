@@ -4,7 +4,7 @@
 		<!-----------------------------------  Popup Form Password  --Start--  ----------------------------------->
 		<div class="popup__form _content _done">
           	<div class="popup__form_body">
-				<form class="form__new form-add" id="form">
+				<form class="form__new form-add" id="form" enctype="multipart/form-data">
 					<div class="form__new_content" >
 						<div class="form__new_title">Добавить тест</div>
 						<div class="form__new_item">
@@ -47,7 +47,7 @@
 							</div>
 						</div>
 						<button type="submit" class="form__new_button">
-							Войти
+							Отправить
 						</button>
 					</div>
 					<div class="alert__messege">
@@ -56,11 +56,13 @@
 						</div>
 						Нажмите по экрану, чтобы закрыть.
 					</div>
-					<?php include "include/menu.php"; ?>
 				</form>
 		   	</div>
         </div>
 		<!-----------------------------------  Popup Form Password  --End--  ----------------------------------->
-	</div>
+		<div class="_menu__icon_white _updatepassword_newcontentpassword">
+			<?php include "include/menu.php"; ?>
+		</div>
+</div>
 <?php include "include/script.php"; ?>
 <?php include "include/end.php"; ?>

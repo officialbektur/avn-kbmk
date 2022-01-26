@@ -1,0 +1,74 @@
+/* ===================================  Dropdown List  --Start--  =================================== */
+.menu__list_sublist {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+	-webkit-tap-highlight-color: $clickByTouchColor0;
+	&._active .menu__arrow {
+		transform: rotate(-180deg);
+	}
+	&-title {
+		width: 100%;
+		body._pc &:hover {
+			background-color: $colorDodgerBlue3;
+		}
+		.menu__link {
+			transition: none;
+			body._pc &:hover {
+				background-color: transparent;
+			}
+		}
+	}
+	&-title .menu__link {
+		width: auto;
+		-webkit-tap-highlight-color: $clickByTouchColor0;
+	}
+}
+/* ====================  Icon dropdown list  ==================== */
+.menu__arrow {
+	display: inline-block;
+	width: 0;
+	height: 0;
+	margin: 0px 0px 0px 5px;
+	border-left: solid 5px transparent;
+	border-right: solid 5px transparent;
+	border-top: solid 10px #ffffff;
+	transition: transform 0.6s ease 0s;
+}
+.menu__sub_list {
+	background-color: #000000;
+	padding: 24px;
+	min-width: 200px;
+	border: solid 1px #303030;
+	text-align: center;
+	z-index: 91;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	> li {
+		margin: 0px 0px 22px 0px;
+	}
+	> li:last-child{
+		margin: 0px 0px;
+	}
+}
+.menu__list_body {
+	.menu__list_sublist:last-child .menu__sub_list {
+		li:nth-child(3) a {
+			color: $colorRed;
+			text-decoration: underline;
+		}
+		li:last-child a {
+			color: $colorRed;
+			text-decoration: line-through;
+		}
+	}
+}
+.menu__sub_link {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: $colorWhite;
+	user-select: none;
+	body._pc &:hover {
+		text-decoration: underline;
+	}
+}
+/* ===================================  Dropdown List  --End--  =================================== */

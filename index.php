@@ -9,6 +9,14 @@
 					Создать страницу<span>+</span>
 				</div>
 			</a>
+			<a href="all.php" class="allpages__block">
+				<div class="allpages__title">
+					Все тесты
+				</div>
+				<div class="allpages__id">
+					ID0
+				</div>
+			</a>
 			<?php
 				$allpages = get_allpages_all();
 				foreach ($allpages as $allpage):
